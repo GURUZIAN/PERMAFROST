@@ -228,7 +228,7 @@ entity = {
 entity = {
 	name = "building_air_base"
 	pdxmesh = "building_air_base"	
-	scale = 1.4
+	scale = 0.5
 	
 	locator = { name = "damage_locator_01"	position = { 1.35 0.0 -0.35 } }
 	locator = { name = "damage_locator_02"	position = { -0.8 0.6 0.4 } }
