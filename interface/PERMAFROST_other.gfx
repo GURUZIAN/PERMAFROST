@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+   spriteType = { 
+     name = "GFX_PERMAFROST_album_art"				
+     textureFile = "gfx/PERMAFROST_album_art.dds"
+     noOfFrames = 2
+   }
+}
