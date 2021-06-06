@@ -216,10 +216,10 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "building_industrial_complex"
-		file = "gfx/models/buildings/factory/factory_hoi4.mesh"
+		file = "gfx/models/buildings/factory/factory.mesh"
 	}
 	pdxmesh = {
 		name = "building_arms_factory"
-		file = "gfx/models/buildings/weaponry/weaponry_hoi4.mesh"
+		file = "gfx/models/buildings/weaponry/weaponry.mesh"
 	}
 }
