@@ -111,7 +111,7 @@ objectTypes = {
 		
 	pdxmesh = {
 		name = "building_air_base"
-		file = "gfx/models/buildings/hangar_flight.mesh"
+		file = "gfx/models/buildings/airport/airport.mesh"
     }
 	
 	pdxmesh = {
