@@ -132,6 +132,18 @@ buildings = {
 		show_modifier = yes
 		fuel_gain_from_states = 2.0 #per hour
 	}
+	
+	research_complex = {
+		show_on_map = 1
+		base_cost = 15000
+		RESEARCH_SHARING_PER_COUNTRY_BONUS_FACTOR = 0.02
+		LICENSE_PURCHASE_COST = -0.02
+		RESEARCH_SPEED_FACTOR = 0.05
+		icon_frame = 14
+		max_level = 1
+		shares_slots = yes
+		value = 3
+	}
 
 	fuel_silo = {
 		show_on_map = 1
