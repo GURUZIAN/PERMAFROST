@@ -4,6 +4,13 @@ state={
 	provinces={
 		4297 5093 6304 6437 9025 
 	}
+	history={
+		victory_points = {
+			9025 15
+		}
+		owner = POG
+		add_core_of = POG
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 }
