@@ -28,7 +28,7 @@ units = {
 		}
 		location = 2771
 		division_template = "Elite militia"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 		start_equipment_factor = 0.7
 
 	}
@@ -39,7 +39,7 @@ units = {
 		}
 		location = 8850
 		division_template = "Militia"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.2
 
 	}
@@ -50,7 +50,7 @@ units = {
 		}
 		location = 5044 
 		division_template = "Militia"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 		}
 }
