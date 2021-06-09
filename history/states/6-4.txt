@@ -5,6 +5,13 @@ state={
 	provinces={
 		7803 8851 8868 8875 
 	}
+	history={
+		victory_points = {
+			8868 5
+		}
+		owner = FKP
+		add_core_of = FKP
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 }

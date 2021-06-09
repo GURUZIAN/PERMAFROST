@@ -87,6 +87,8 @@ set_popularities = {
 	fascism = 100
 	communism = 0
 	neutrality = 0
+	technocratic = 0
+	tribal = 0
 }
 
 create_country_leader = {

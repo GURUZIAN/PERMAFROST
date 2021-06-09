@@ -1,4 +1,4 @@
-﻿capital = 4
+﻿capital = 6
 
 oob = "OST_2051"
 
@@ -31,27 +31,27 @@ set_technology = {
 set_convoys = 3
 
 set_politics = {
-	ruling_party = technocratic
+	ruling_party = tribal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	fascism = 30
-	communism = 10
-	neutrality = 5
-	technocratic = 45
-	tribal = 5
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	technocratic = 0
+	tribal = 100
 }
 
 create_country_leader = {
-	name = "Dell Konager"
+	name = "Ivan Kedr"
 	desc = "POLITICS_DELL_DESC"
 	picture = "DELL.dds"
 	expire = "2055.1.1"
-	ideology = technocratic_ideology
+	ideology = tribal_system
 	traits = {
 		exiled
 		union_man

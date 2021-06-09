@@ -1,6 +1,11 @@
 ﻿l_english:
- STATE_1:1 "Dobrin"
+ STATE_1:1 "-"
  STATE_2:0 "Mestosmerti"
  STATE_3:0 "Kalina"
  STATE_4:0 "Vorkensberg"
  STATE_5:1 "Last Hope"
+ STATE_6:1 "Sacred Grove"
+
+ STATE_11:1 "Chernyi Bereg"
+ STATE_12:1 "Panteleimon's Trail"
+ STATE_13:1 "Vsesvyataya Sloboda"
