@@ -15,7 +15,10 @@ state={
 		add_core_of = WSU
 		buildings = {
 			4370 = {
-				naval_base = 6
+				naval_base = 3
+			}
+			8840 = {
+				naval_base = 5
 			}
 			infrastructure = 4
 			industrial_complex = 2

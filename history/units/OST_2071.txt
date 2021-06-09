@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "División de Infanteria"		# Infantry Division - Reserve division called to full strength in time of war
+	name = "Militia"
 	division_names_group = SPAN_INF_02
 
 	regiments = {
@@ -7,7 +7,7 @@
 	}
 }
 division_template = {
-	name = "División de Caballería"  	# Cavalry Division
+	name = "Elite militia"  	# Cavalry Division
 	division_names_group = SPAN_CAV_01
 
 	regiments = {
@@ -21,36 +21,35 @@ division_template = {
 }
 
 units = {
-	##### Ejército Argentino #####
-	division= {	# "1era División del Ejercito"
+	division= {	# "Pervaya elitnaya divisia imeni Della Konagera"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 2771
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		division_template = "Elite militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
-	division= {	# "2da División del Ejercito"
+	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
 		location = 8850
-		division_template = "División de Infanteria"
+		division_template = "Militia"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 
 	}
-	division= {	# "3era División del Ejercito"
+	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 5895 
-		division_template = "División de Infanteria"
+		location = 5044 
+		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 		}

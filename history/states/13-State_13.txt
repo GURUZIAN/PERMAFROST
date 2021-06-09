@@ -8,9 +8,19 @@ state={
 		victory_points = {
 			9025 15
 		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			9025 = {
+				naval_base = 6
+			}
+		}
 		owner = POG
 		add_core_of = POG
 	}
-	manpower=0
+	manpower=5321
 	buildings_max_level_factor=1.000
+	state_category = town 
 }

@@ -49,7 +49,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ivan Kedr"
 	desc = "POLITICS_DELL_DESC"
-	picture = "DELL.dds"
+	picture = "FKP_LEADER_1.dds"
 	expire = "2055.1.1"
 	ideology = tribal_system
 	traits = {
@@ -59,23 +59,12 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Kenneth Adams"
-	picture = "OST_G2.dds"
-	traits = { trait_cautious defensive_doctrine trickster winter_specialist }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Archer Foster"
-	picture = "OST_G1.dds"
-	traits = { winter_specialist }
+	name = "Ivan Kedr"
+	picture = "FKP_LEADER_1.dds"
+	traits = { defensive_doctrine }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
-	planning_skill = 2
+	planning_skill = 1
 	logistics_skill = 1
 }

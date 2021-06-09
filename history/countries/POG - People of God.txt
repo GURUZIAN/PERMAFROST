@@ -49,7 +49,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Osip Pervosvetov"
 	desc = "POLITICS_DELL_DESC"
-	picture = "DELL.dds"
+	picture = "POG_leader_1.dds"
 	expire = "2055.1.1"
 	ideology = pragmatic_ideology
 	traits = {
@@ -59,23 +59,34 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Kenneth Adams"
-	picture = "OST_G2.dds"
-	traits = { trait_cautious defensive_doctrine trickster winter_specialist }
+	name = "Adolf Pobedniy"
+	picture = "POG_general_3.dds"
+	traits = { politically_connected brilliant_strategist trait_reckless }
 	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
 	logistics_skill = 2
 }
 
 create_corps_commander = {
-	name = "Archer Foster"
-	picture = "OST_G1.dds"
-	traits = { winter_specialist }
+	name = "Maksim Shabrat"
+	picture = "POG_general_2.dds"
+	traits = { winter_specialist infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Dima Berstoyik"
+	picture = "POG_general_1.dds"
+	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 }

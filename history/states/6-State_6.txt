@@ -9,9 +9,13 @@ state={
 		victory_points = {
 			8868 5
 		}
+		buildings = {
+			infrastructure = 1
+		}
 		owner = FKP
 		add_core_of = FKP
 	}
-	manpower=0
+	manpower=1524
 	buildings_max_level_factor=1.000
+	state_category = pastoral  
 }

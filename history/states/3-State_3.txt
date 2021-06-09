@@ -9,6 +9,7 @@ state={
 		history={
 		owner = OST
 		add_core_of = OST
+		add_core_of = FKP
 		buildings = {
 			infrastructure = 2
 		}
