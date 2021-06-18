@@ -1,0 +1,25 @@
+state={
+	id=8
+	name="STATE_8"
+	provinces={
+		3320 3425 6950 8916 8955 
+	}
+	history={
+		victory_points = {
+			3425 10
+		}
+		owner = TLL
+		add_core_of = TLL
+		buildings = {
+			3425 = {
+				naval_base = 5
+			}
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=4142
+	buildings_max_level_factor=1.000
+	state_category = town
+}

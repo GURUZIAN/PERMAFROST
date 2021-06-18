@@ -1,0 +1,20 @@
+state={
+	id=7
+	name="STATE_7"
+	provinces={
+		4172 4265 8893 
+	}
+	history={
+		victory_points = {
+			8893 3
+		}
+		owner = TLL
+		add_core_of = TLL
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=351
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

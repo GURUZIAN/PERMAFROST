@@ -1,6 +1,6 @@
-﻿capital = 5
+﻿capital = 8
 
-oob = "WSU_2071"
+oob = "TLL_2071"
 
 set_research_slots = 4
 set_stability = 0.4
@@ -29,35 +29,34 @@ set_technology = {
 set_convoys = 1
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 21
-	fascism = 29
-	communism = 5
-	neutrality = 35
-	technocratic = 5
-	tribal = 5
+	democratic = 2
+	fascism = 68
+	communism = 10
+	neutrality = 9
+	technocratic = 11
 }
 
 create_country_leader = {
-	name = "Vlad Coptesvsky"
+	name = "Adam Dereveniev"
 	desc = "POLITICS_DELL_DESC"
-	picture = "WSU_L1.dds"
-	expire = "2055.1.1"
-	ideology = humanism_ideology
+	picture = "TLL_leader_1.dds"
+	expire = "2075.1.1"
+	ideology = chauvinism_ideology
 	traits = {
 #
 	}
 }
 
 create_field_marshal = {
-	name = "Kenneth Adams"
-	picture = "WSU_G1.dds"
+	name = "Konstatin Ianin"
+	picture = "TLL_general_1.dds"
 	traits = { guerilla_fighter }
 	skill = 3
 	attack_skill = 3
