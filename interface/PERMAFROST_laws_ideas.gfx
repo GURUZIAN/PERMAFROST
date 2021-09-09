@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+   spriteType = { 
+     name = "GFX_idea_primitive_society"				
+     textureFile = "gfx/ideas/laws/society_level_1.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_traditional_society"				
+     textureFile = "gfx/ideas/laws/society_level_2.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_early_technogenic_society"				
+     textureFile = "gfx/ideas/laws/society_level_3.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_technogenic_society"				
+     textureFile = "gfx/ideas/laws/society_level_4.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_technotronic_society"				
+     textureFile = "gfx/ideas/laws/society_level_5.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_utopian_society"				
+     textureFile = "gfx/ideas/laws/society_level_6.dds"
+   }
+}
