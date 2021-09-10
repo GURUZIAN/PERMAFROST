@@ -1,0 +1,50 @@
+﻿l_english:
+ government_laws:0 "Government Laws"
+
+ civilization_level:0 "Civilization Level"
+
+ civilization_level_primitive_society:0 "Primitive Society"
+ civilization_level_traditional_society:0 "Traditional Society"
+ civilization_level_early_technogenic_society:0 "Early Technogenic Society"
+ civilization_level_technogenic_society:0 "Technogenic Society"
+ civilization_level_technotronic_society:0 "Technotronic Society"
+ civilization_level_utopian_society:0 "Utopian Society"
+
+ political_system:0 "Political System"
+
+ political_system_tribal:0 "Tribal"
+ political_system_tyranny:0 "Tyranny"
+ political_system_autocracy:0 "Autocracy"
+ political_system_democracy:0 "Democracy"
+ political_system_communes:0 "Union of Communes"
+
+ social_structure:0 "Social Structure"
+
+ social_structure_tribal:0 "Tribal Society"
+ social_structure_castes:0 "Caste Society"
+ social_structure_estates:0 "Estates"
+ social_structure_classes:0 "Class Society"
+ social_structure_classless:0 "Classless Society"
+
+ management_efficiency:0 "Management Efficency"
+
+ management_efficiency_collapse:0 "Collapse!"
+ management_efficiency_low:0 "Low Efficiency"
+ management_efficiency_mediocre:0 "Mediocre Efficiency"
+ management_efficiency_high:0 "High Efficiency"
+ management_efficiency_absolute:0 "Absolute Efficiency"
+
+ races:0 "Races"
+ 
+ race_humans:0 "Humans"
+ race_wilds:0 "Ferines"
+
+ economy_laws:0 "Economic Laws"
+
+ economic_structure:0 "Economic Structure"
+
+ tribal_economy:0 "Primitive Economy"
+ traditional_economy:0 "Archaic Economy"
+ market_economy:0 "Market Economy"
+ state_capitalism:0 "State Capitalism"
+ planned_economy:0 "Planned Economy"

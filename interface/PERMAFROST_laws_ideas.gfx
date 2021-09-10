@@ -1,27 +1,93 @@
 spriteTypes = {	
 
    spriteType = { 
-     name = "GFX_idea_primitive_society"				
+     name = "GFX_idea_civilization_level_primitive_society"				
      textureFile = "gfx/ideas/laws/society_level_1.dds"
    }
    spriteType = { 
-     name = "GFX_idea_traditional_society"				
+     name = "GFX_idea_civilization_level_traditional_society"				
      textureFile = "gfx/ideas/laws/society_level_2.dds"
    }
    spriteType = { 
-     name = "GFX_idea_early_technogenic_society"				
+     name = "GFX_idea_civilization_level_early_technogenic_society"				
      textureFile = "gfx/ideas/laws/society_level_3.dds"
    }
    spriteType = { 
-     name = "GFX_idea_technogenic_society"				
+     name = "GFX_idea_civilization_level_technogenic_society"				
      textureFile = "gfx/ideas/laws/society_level_4.dds"
    }
    spriteType = { 
-     name = "GFX_idea_technotronic_society"				
+     name = "GFX_idea_civilization_level_technotronic_society"				
      textureFile = "gfx/ideas/laws/society_level_5.dds"
    }
    spriteType = { 
-     name = "GFX_idea_utopian_society"				
+     name = "GFX_idea_civilization_level_utopian_society"				
      textureFile = "gfx/ideas/laws/society_level_6.dds"
+   }
+
+
+   spriteType = { 
+     name = "GFX_idea_social_structure_tribal"				
+     textureFile = "gfx/ideas/laws/social_structure_1.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_social_structure_castes"				
+     textureFile = "gfx/ideas/laws/social_structure_2.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_social_structure_estates"				
+     textureFile = "gfx/ideas/laws/social_structure_3.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_social_structure_classes"				
+     textureFile = "gfx/ideas/laws/social_structure_4.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_social_structure_classless"				
+     textureFile = "gfx/ideas/laws/social_structure_5.dds"
+   }
+
+
+   spriteType = { 
+     name = "GFX_idea_tribal_economy"				
+     textureFile = "gfx/ideas/laws/economy_system_1.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_traditional_economy"				
+     textureFile = "gfx/ideas/laws/economy_system_2.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_market_economy"				
+     textureFile = "gfx/ideas/laws/economy_system_3.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_state_capitalism"				
+     textureFile = "gfx/ideas/laws/economy_system_4.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_planned_economy"				
+     textureFile = "gfx/ideas/laws/economy_system_5.dds"
+   }
+
+
+   spriteType = { 
+     name = "GFX_idea_political_system_tribal"				
+     textureFile = "gfx/ideas/laws/political_system_1.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_political_system_tyranny"				
+     textureFile = "gfx/ideas/laws/political_system_2.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_political_system_autocracy"				
+     textureFile = "gfx/ideas/laws/political_system_3.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_political_system_democracy"				
+     textureFile = "gfx/ideas/laws/political_system_4.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_political_system_communes"				
+     textureFile = "gfx/ideas/laws/political_system_5.dds"
    }
 }

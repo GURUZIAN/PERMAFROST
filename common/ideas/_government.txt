@@ -1,0 +1,705 @@
+ideas = {
+
+		civilization_level = { 
+		law = yes
+		use_list_view = yes
+		
+		civilization_level_primitive_society = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		civilization_level_traditional_society = {
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05 
+				research_speed_factor = -0.20
+				nuclear_production = 0
+				army_leader_start_level = 1
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		civilization_level_early_technogenic_society = {
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				nuclear_production = 0
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.3
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+			
+			allowed_to_remove = {
+				OR = {
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+		}
+		civilization_level_technogenic_society = {
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = +0.2
+				production_speed_buildings_factor = 0.2
+				local_resources_factor = 0.4
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		civilization_level_technotronic_society = {
+			cost = 0
+			removal_cost = -1
+			
+			icon = society_level_5
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = +0.5
+				production_speed_buildings_factor = 0.25
+				local_resources_factor = 0.6
+				consumer_goods_factor = 0.12
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		civilization_level_utopian_society = {
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = +0.75
+				production_speed_buildings_factor = 0.30
+				local_resources_factor = 0.8
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.5
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+	}
+
+	political_system = { 
+		law = yes
+		use_list_view = yes
+
+		political_system_tribal = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		political_system_tyranny = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		political_system_autocracy = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		political_system_democracy = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		political_system_communes = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+	}
+
+	social_structure = { 
+		law = yes
+		use_list_view = yes
+
+		social_structure_tribal = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		social_structure_castes = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		social_structure_estates = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		social_structure_classes = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		social_structure_classless = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+	}
+
+	management_efficiency = { 
+		law = yes
+		use_list_view = yes
+
+		management_efficiency_collapse = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		management_efficiency_low = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		management_efficiency_mediocre = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		management_efficiency_high = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		management_efficiency_absolute = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+	}
+
+	races = { 
+		law = yes
+		use_list_view = yes
+
+		race_humans = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+
+		race_ferines = {
+		
+			cost = 0
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.80
+                monthly_population = 0.5
+				refit_speed = -0.3
+				production_factory_max_efficiency_factor = -0.5
+				nuclear_production = 0
+				army_leader_cost_factor = 2
+				army_leader_start_level = 1
+				send_volunteer_size = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+	}
+
+}

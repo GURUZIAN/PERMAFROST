@@ -429,89 +429,31 @@ ideas = {
    			}
 		}
 		}
-		###PERMAFROST
-		
-		civilization_level = { 
+
+		economic_structure = { 
 		law = yes
 		use_list_view = yes
 		
-		primitive_society = {
-		
-			cost = 0
+		tribal_economy = {
+			
 			removal_cost = -1
-			
-			allowed = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
-			}
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-   			}
-		}
 		
-		traditional_society = {
-			cost = 0
-			removal_cost = -1
-			
-			allowed = {
-				always = yes
-			}
-			
 			modifier = {
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				production_speed_buildings_factor = -0.05 
-				research_speed_factor = -0.20
-				nuclear_production = 0
-				army_leader_start_level = 1
+				consumer_goods_factor = 0.50
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
 			}
-			
-			default = no
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-   			}
-		}
-		
-		early_technogenic_society = {
-			cost = 0
-			removal_cost = -1
-			
-			allowed = {
-				always = yes
-			}
-			
-			modifier = {
-				nuclear_production = 0
-				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.3
-			}
-			
-			default = yes
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-   			}
 			
 			allowed_to_remove = {
 				OR = {
@@ -519,83 +461,101 @@ ideas = {
 					has_war = yes
 				}
 			}
+			
 		}
-		technogenic_society = {
-			cost = 0
+
+		traditional_economy = {
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.50
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
+			}
+			
+			
+		}
+
+		market_economy = {
+			
 			removal_cost = -1
 			
-			allowed = {
-				always = yes
-			}
-			
 			modifier = {
-				research_speed_factor = +0.2
-				production_speed_buildings_factor = 0.2
-				local_resources_factor = 0.4
-				consumer_goods_factor = 0.05
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = 0.50
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
 			}
 			
-			default = no
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-   			}
 		}
-		technotronic_society = {
-			cost = 0
+
+		state_capitalism = {
+			
+			
 			removal_cost = -1
-			
-			icon = society_level_5
-			
-			allowed = {
-				always = yes
-			}
-			
+		
 			modifier = {
-				research_speed_factor = +0.5
-				production_speed_buildings_factor = 0.25
-				local_resources_factor = 0.6
-				consumer_goods_factor = 0.12
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = 0.50
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
 			}
-			
-			default = no
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-   			}
 		}
-		utopian_society = {
-			cost = 0
+
+		planned_economy = {
+			
+			
 			removal_cost = -1
-			
-			allowed = {
-				always = yes
-			}
-			
+		
 			modifier = {
-				research_speed_factor = +0.75
-				production_speed_buildings_factor = 0.30
-				local_resources_factor = 0.8
-				consumer_goods_factor = 0.25
-				production_factory_max_efficiency_factor = 0.3
-				production_factory_efficiency_gain_factor = 0.5
+				consumer_goods_factor = 0.50
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
 			}
-			
-			default = no
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-   			}
 		}
+
 	}
 }
