@@ -36,7 +36,7 @@ idea_categories = {
 		removal_cost = 0
 	}
 	
-	government = {
+	government_composition = {
 		slot = political_advisor
 		slot = political_advisor
 		slot = political_advisor

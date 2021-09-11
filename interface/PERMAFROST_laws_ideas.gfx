@@ -90,4 +90,36 @@ spriteTypes = {
      name = "GFX_idea_political_system_communes"				
      textureFile = "gfx/ideas/laws/political_system_5.dds"
    }
+   
+   
+   spriteType = { 
+     name = "GFX_idea_management_efficiency_collapse"				
+     textureFile = "gfx/ideas/laws/management_efficiency_collapse.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_management_efficiency_low"				
+     textureFile = "gfx/ideas/laws/management_efficiency_low.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_management_efficiency_mediocre"				
+     textureFile = "gfx/ideas/laws/management_efficiency_mediocre.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_management_efficiency_high"				
+     textureFile = "gfx/ideas/laws/management_efficiency_high.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_management_efficiency_absolute"				
+     textureFile = "gfx/ideas/laws/management_efficiency_absolute.dds"
+   }
+   
+   
+   spriteType = { 
+     name = "GFX_idea_race_humans"				
+     textureFile = "gfx/ideas/laws/race_humans.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_race_ferines"				
+     textureFile = "gfx/ideas/laws/race_ferines.dds"
+   }
 }

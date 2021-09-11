@@ -428,9 +428,9 @@ ideas = {
 				}
    			}
 		}
-		}
+	}
 
-		economic_structure = { 
+	economic_structure = { 
 		law = yes
 		use_list_view = yes
 		
@@ -556,6 +556,5 @@ ideas = {
 				agency_upgrade_time = 1.0
 			}
 		}
-
 	}
 }

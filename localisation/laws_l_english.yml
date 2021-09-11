@@ -22,7 +22,7 @@
 
  social_structure_tribal:0 "Tribal Society"
  social_structure_castes:0 "Caste Society"
- social_structure_estates:0 "Estates"
+ social_structure_estates:0 "Estates Society"
  social_structure_classes:0 "Class Society"
  social_structure_classless:0 "Classless Society"
 
@@ -37,7 +37,7 @@
  races:0 "Races"
  
  race_humans:0 "Humans"
- race_wilds:0 "Ferines"
+ race_ferines:0 "Ferines"
 
  economy_laws:0 "Economic Laws"
 
@@ -48,3 +48,6 @@
  market_economy:0 "Market Economy"
  state_capitalism:0 "State Capitalism"
  planned_economy:0 "Planned Economy"
+ 
+ military:0 "Military"
+ government_composition:0 "Government composition"

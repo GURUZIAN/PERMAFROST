@@ -32,6 +32,10 @@ ideas = {
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+					has_war = no
+					has_country_flag = allowed_to_change_civilization_level
+			}
 		}
 		
 		civilization_level_traditional_society = {
@@ -58,6 +62,10 @@ ideas = {
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+					has_war = no
+					has_country_flag = allowed_to_change_civilization_level
+			}
 		}
 		
 		civilization_level_early_technogenic_society = {
@@ -83,10 +91,8 @@ ideas = {
    			}
 			
 			allowed_to_remove = {
-				OR = {
-					has_war_support > 0.5
-					has_war = yes
-				}
+					has_war = no
+					has_country_flag = allowed_to_change_civilization_level
 			}
 		}
 		civilization_level_technogenic_society = {
@@ -113,6 +119,10 @@ ideas = {
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+					has_war = no
+					has_country_flag = allowed_to_change_civilization_level
+			}
 		}
 		civilization_level_technotronic_society = {
 			cost = 0
@@ -165,6 +175,10 @@ ideas = {
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+					has_war = no
+					has_country_flag = allowed_to_change_civilization_level
+			}
 		}
 	}
 
@@ -181,21 +195,18 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			available = {
+				has_government = tribal
 			}
 			
-			cancel_if_invalid = no
+			modifier = {
+				join_faction_tension = 1
+				political_power_factor = -0.1
+				stability_factor = 0.2
+				war_support_factor = 0.5
+			}
+			
+			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 1
@@ -211,21 +222,25 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			available = {
+			NOT = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = tribal
+				has_elections = yes
+				has_idea = social_structure_classless
+				}
 			}
 			
-			cancel_if_invalid = no
+			modifier = {
+				political_power_factor = +0.25
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				justify_war_goal_time = -0.15
+				autonomy_manpower_share = -0.15
+			}
+			
+			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 1
@@ -241,21 +256,23 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			    available = {
+			NOT = {
+				has_government = tribal
+				has_war_support < 0.5
+				has_idea = social_structure_classless
+				}
 			}
 			
-			cancel_if_invalid = no
+			modifier = {
+				political_power_factor = +0.1
+				stability_factor = -0.05
+				justify_war_goal_time = -0.10
+				puppet_cost_factor = -0.1
+				autonomy_manpower_share = -0.1
+			}
+			
+			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 1
@@ -271,25 +288,31 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			available = {
+			NOT = {
+				has_government = tribal
+				has_government = communism
+				has_idea = social_structure_castes
+				has_idea = social_structure_estates
+				}
 			}
 			
-			cancel_if_invalid = no
+			modifier = {
+				war_support_factor = +0.15
+				stability_factor = +0.05
+				justify_war_goal_time = +0.10
+				non_core_manpower = +0.05
+			}
+			
+			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 1
    			}
+			
+			allowed_to_remove = {
+				has_war_support > 0.5
+			}
 		}
 
 		political_system_communes = {
@@ -301,25 +324,32 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			available = {
+				has_idea = social_structure_classless
+			NOT = {
+				has_government = tribal
+				has_government = communism
+				has_government = fascism
+				has_government = technocratic
+				has_war_support < 0.6
+				}
 			}
 			
-			cancel_if_invalid = no
+			modifier = {
+				puppet_cost_factor = +0.2
+				stability_factor = -0.2
+				mobilization_speed = 0.1
+				surrender_limit = 0.2
+			}
+			
+			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+				has_stability > 0.7
+			}
 		}
 		
 	}
@@ -649,18 +679,9 @@ ideas = {
 				always = yes
 			}
 			
+			default = yes
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
 			}
 			
 			cancel_if_invalid = no
@@ -668,6 +689,9 @@ ideas = {
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+					has_country_flag = allowed_to_change_race
+			}
 		}
 
 		race_ferines = {
@@ -679,18 +703,13 @@ ideas = {
 				always = yes
 			}
 			
+		default = no
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				monthly_population = 0.5
+				research_speed_factor = -0.10
+				land_night_attack = 0.10
+				army_attack_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -698,6 +717,9 @@ ideas = {
 			ai_will_do = {
    				factor = 1
    			}
+			allowed_to_remove = {
+					has_country_flag = allowed_to_change_race
+			}
 		}
 		
 	}
