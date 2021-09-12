@@ -1,4 +1,4 @@
-﻿capital = 8
+﻿capital = 43
 
 oob = "TLL_2071"
 
@@ -56,11 +56,22 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Konstatin Ianin"
-	picture = "TLL_general_1.dds"
-	traits = { guerilla_fighter }
-	skill = 3
+	picture = "TILL_G1.dds"
+	traits = { guerilla_fighter politically_connected }
+	skill = 4
 	attack_skill = 3
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ivan Radzoevsky"
+	picture = "TILL_G2.dds"
+	traits = { trait_cautious }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 5
 }

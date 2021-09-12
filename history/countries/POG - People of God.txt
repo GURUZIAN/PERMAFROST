@@ -39,11 +39,11 @@ set_politics = {
 
 set_popularities = {
 	democratic = 15
-	fascism = 15
-	communism = 15
-	neutrality = 25
+	fascism = 10
+	communism = 3
+	neutrality = 57
 	technocratic = 15
-	tribal = 15
+	tribal = 0
 }
 
 create_country_leader = {

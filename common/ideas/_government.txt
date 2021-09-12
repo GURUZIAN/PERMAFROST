@@ -188,7 +188,7 @@ ideas = {
 
 		political_system_tribal = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
@@ -215,7 +215,7 @@ ideas = {
 		
 		political_system_tyranny = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
@@ -224,11 +224,11 @@ ideas = {
 			
 			available = {
 			NOT = {
+				has_idea = social_structure_classless
 				has_government = democratic
 				has_government = neutrality
 				has_government = tribal
 				has_elections = yes
-				has_idea = social_structure_classless
 				}
 			}
 			
@@ -249,7 +249,7 @@ ideas = {
 		
 		political_system_autocracy = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
@@ -258,9 +258,10 @@ ideas = {
 			
 			    available = {
 			NOT = {
-				has_government = tribal
-				has_war_support < 0.5
 				has_idea = social_structure_classless
+				has_government = tribal
+				has_idea = social_structure_castes
+				has_government = democratic
 				}
 			}
 			
@@ -281,7 +282,7 @@ ideas = {
 
 		political_system_democracy = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
@@ -317,7 +318,7 @@ ideas = {
 
 		political_system_communes = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
@@ -331,7 +332,7 @@ ideas = {
 				has_government = communism
 				has_government = fascism
 				has_government = technocratic
-				has_war_support < 0.6
+				has_war_support < 0.4
 				}
 			}
 			
@@ -360,25 +361,21 @@ ideas = {
 
 		social_structure_tribal = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
 				always = yes
 			}
 			
+			available = {
+				has_government = tribal
+				has_idea = political_system_tribal
+				}
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			stability_factor = 0.4
+			political_power_gain = 0.15
 			}
 			
 			cancel_if_invalid = no
@@ -390,25 +387,31 @@ ideas = {
 		
 		social_structure_castes = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
 				always = yes
 			}
 			
+			available = {
+			NOT = {
+				has_government = tribal
+				has_government = technocratic
+				has_government = democratic
+				has_idea = political_system_democracy
+				has_idea = political_system_communes
+				has_idea = political_system_autocracy
+				}
+			}
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				stability_factor = 0.2
+				political_power_factor = 0.25
+				war_support_factor = -0.05
+				puppet_cost_factor = +0.2
+				master_ideology_drift = 0.05
+				drift_defence_factor = 0.5
 			}
 			
 			cancel_if_invalid = no
@@ -420,25 +423,29 @@ ideas = {
 		
 		social_structure_estates = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
 				always = yes
 			}
 			
+			available = {
+			NOT = {
+				has_government = tribal
+				has_government = technocratic
+				has_idea = political_system_democracy
+				has_idea = political_system_communes
+				}
+			}
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				stability_factor = 0.1
+				political_power_factor = 0.10
+				war_support_factor = -0.10
+				puppet_cost_factor = +0.1
+				surrender_limit = -0.15
+				drift_defence_factor = 0.25
 			}
 			
 			cancel_if_invalid = no
@@ -450,25 +457,24 @@ ideas = {
 
 		social_structure_classes = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
 				always = yes
 			}
 			
+			available = {
+			NOT = {
+				has_government = tribal
+				has_idea = political_system_communes
+				}
+			}
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+			war_support_factor = 0.05
+			party_popularity_stability_factor  = 0.5
+			research_speed_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -480,25 +486,26 @@ ideas = {
 
 		social_structure_classless = {
 		
-			cost = 0
+			cost = 100
 			removal_cost = -1
 			
 			allowed = {
 				always = yes
 			}
 			
+			available = {
+			NOT = {
+				has_government = tribal
+				has_government = technocratic
+				has_government = fascism
+				has_government = communism
+				}
+			}
+			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				war_support_factor = +0.20
 			}
 			
 			cancel_if_invalid = no

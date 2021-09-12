@@ -79,3 +79,14 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 1
 }
+
+create_field_marshal = {
+	name = "Till Chernist"
+	picture = "OST_G3.dds"
+	traits = { trait_cautious infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
