@@ -196,7 +196,7 @@ ideas = {
 			}
 			
 			available = {
-				has_government = tribal
+				has_idea = civilization_level_primitive_society
 			}
 			
 			modifier = {
