@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "People Division"
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Human fist"
+	division_names_group = SPAN_CAV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8871
+		division_template = "Human fist"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 8909
+		division_template = "Human fist"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8953 
+		division_template = "Human fist"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 8935 
+		division_template = "People Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1919
+		division_template = "People Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+#air_wings = {
+#
+#	302 = {
+#
+#		fighter_equipment_0 =  {
+#			owner = "OST" 
+#			amount = 12
+#		}
+#	}
+#}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "DKA"
+		}
+		requested_factories = 5
+		progress = 0.77
+		efficiency = 100
+	}
+}

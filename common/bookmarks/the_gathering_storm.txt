@@ -7,9 +7,9 @@ bookmarks = {
 		default_country = "OST"
 		default = yes
 		
-		"OST"={
-			history = "OST_GATHERING_STORM_DESC"
-			ideology = neutrality
+		"DKA"={
+			history = "DKA_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
 				
 				

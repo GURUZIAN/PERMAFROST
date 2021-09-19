@@ -70,6 +70,7 @@ ideologies = {
 			utilitarism_ideology = {
 			}
 			
+			###useless religion###
 			marxism = {
 			}
 			

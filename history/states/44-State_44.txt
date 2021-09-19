@@ -1,0 +1,22 @@
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		3018
+	}
+	history={
+		victory_points = {
+			3018 25
+		}
+		owner = DKA
+		add_core_of = DKA
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 5
+			arms_factory = 6
+		}
+	}
+	manpower=30142
+	buildings_max_level_factor=1.000
+	state_category = megalopolis 
+}

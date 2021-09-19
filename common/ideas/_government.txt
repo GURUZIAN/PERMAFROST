@@ -239,6 +239,15 @@ ideas = {
 				justify_war_goal_time = -0.15
 				autonomy_manpower_share = -0.15
 			}
+
+			allowed_to_remove = {
+			NOT = {
+				has_country_leader = {
+                name = "Michail Konager"
+                ruling_only = yes
+                }
+            }
+	    }
 			
 			cancel_if_invalid = yes
 
@@ -448,6 +457,15 @@ ideas = {
 				drift_defence_factor = 0.25
 			}
 			
+			allowed_to_remove = {
+			NOT = {
+				has_country_leader = {
+                name = "Michail Konager"
+                ruling_only = yes
+                }
+            }
+	    }
+			
 			cancel_if_invalid = no
 
 			ai_will_do = {
@@ -531,20 +549,19 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				drift_defence_factor = -0.5
+				war_support_factor = -0.1
+				political_power_factor = -0.05
+				army_org_factor = -0.1
+				government_cost_factor = 0.5
 			}
 			
 			cancel_if_invalid = no
+			
+			allowed_to_remove = {
+				has_war = no
+				has_country_flag = allowed_to_change_management_efficiency
+			}
 
 			ai_will_do = {
    				factor = 1
@@ -561,17 +578,15 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				drift_defence_factor = -0.25
+				war_support_factor = -0.05
+				army_org_factor = -0.05
+				government_cost_factor = 0.35
+			}
+			
+			allowed_to_remove = {
+				has_war = no
+				has_country_flag = allowed_to_change_management_efficiency
 			}
 			
 			cancel_if_invalid = no
@@ -591,18 +606,16 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				drift_defence_factor = -0.10
+				government_cost_factor = 0.10
 			}
+			
+			allowed_to_remove = {
+				has_war = no
+				has_country_flag = allowed_to_change_management_efficiency
+			}
+			
+			default = yes
 			
 			cancel_if_invalid = no
 
@@ -621,17 +634,15 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				drift_defence_factor = +0.25
+				war_support_factor = +0.05
+				army_org_factor = +0.05
+			    political_power_gain = 0.05
+			}
+			
+			allowed_to_remove = {
+				has_war = no
+				has_country_flag = allowed_to_change_management_efficiency
 			}
 			
 			cancel_if_invalid = no
@@ -651,17 +662,15 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.80
-                monthly_population = 0.5
-				refit_speed = -0.3
-				production_factory_max_efficiency_factor = -0.5
-				nuclear_production = 0
-				army_leader_cost_factor = 2
-				army_leader_start_level = 1
-				send_volunteer_size = 0
+				drift_defence_factor = +0.75
+				war_support_factor = +0.15
+				army_org_factor = +0.15
+				political_power_gain = 0.15
+			}
+			
+			allowed_to_remove = {
+				has_war = no
+				has_country_flag = allowed_to_change_management_efficiency
 			}
 			
 			cancel_if_invalid = no

@@ -1,0 +1,142 @@
+###########################
+#management_efficiency
+###########################
+
+add_namespace = management_efficiency
+
+
+country_event = {
+	id = management_efficiency.1    #colapse
+	title = management_efficiency.1.t	
+	desc = management_efficiency.1.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		OR = {
+		has_civil_war = yes
+		has_country_flag = advanced_civilwar
+		}
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    management_efficiency_collapse
+        }
+	}
+}
+
+country_event = {
+	id = management_efficiency.2    #low efficiency
+	title = management_efficiency.2.t	
+	desc = management_efficiency.2.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		has_war = no
+	OR = {
+		has_stability < 0.2
+		has_war_support < 0.2
+		}
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    management_efficiency_low
+        }
+	}
+}
+
+country_event = {
+	id = management_efficiency.3    #Efficiency mediocre
+	title = management_efficiency.3.t	
+	desc = management_efficiency.3.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		has_war = no
+	AND = {
+		has_stability > 0.2
+		has_stability < 0.5
+		has_war_support > 0.2
+		}
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    management_efficiency_mediocre
+        }
+	}
+}
+
+country_event = {
+	id = management_efficiency.4    #Efficiency high
+	title = management_efficiency.4.t	
+	desc = management_efficiency.4.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		has_war = no
+	AND = {
+		has_stability > 0.5
+		has_stability < 0.75
+		has_war_support > 0.2
+		}
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    management_efficiency_high
+        }
+	}
+}
+
+country_event = {
+	id = management_efficiency.5    #Efficiency absolute
+	title = management_efficiency.5.t	
+	desc = management_efficiency.5.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		has_war = no
+	AND = {
+		has_stability > 0.75
+		has_war_support > 0.2
+		}
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    management_efficiency_absolute
+        }
+	}
+}

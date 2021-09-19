@@ -1,0 +1,21 @@
+state={
+	id=19
+	name="STATE_19"
+	provinces={
+		2488 4671 7531 8879 
+	}
+	history={
+		victory_points = {
+			7531 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		owner = DKA
+		add_core_of = DKA
+	}
+	manpower=1523
+	buildings_max_level_factor=1.000
+	state_category = rural   
+}

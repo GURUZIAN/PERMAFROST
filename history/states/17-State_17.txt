@@ -1,0 +1,21 @@
+state={
+	id=17
+	name="STATE_17"
+	provinces={
+		301 991 8935 8953 
+	}
+	history={
+		victory_points = {
+			8953 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		owner = DKA
+		add_core_of = DKA
+	}
+	manpower=2794
+	buildings_max_level_factor=1.000
+	state_category = rural   
+}

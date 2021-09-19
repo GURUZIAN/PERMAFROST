@@ -1,0 +1,21 @@
+state={
+	id=22
+	name="STATE_22"
+	provinces={
+		1919 5294 5722 8004 8863 8872 8922 
+	}
+	history={
+		victory_points = {
+			1919 5
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		owner = DKA
+		add_core_of = DKA
+	}
+	manpower=8212
+	buildings_max_level_factor=1.000
+	state_category = town   
+}
