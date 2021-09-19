@@ -46,7 +46,7 @@
  tribal_economy:0 "Primitive Economy"
  traditional_economy:0 "Archaic Economy"
  market_economy:0 "Market Economy"
- state_capitalism:0 "State Capitalism"
+ mixed_economy:0 "Mixed economy"
  planned_economy:0 "Planned Economy"
  
  military:0 "Military"

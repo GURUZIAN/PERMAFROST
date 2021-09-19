@@ -61,7 +61,7 @@ spriteTypes = {
      textureFile = "gfx/ideas/laws/economy_system_3.dds"
    }
    spriteType = { 
-     name = "GFX_idea_state_capitalism"				
+     name = "GFX_idea_mixed_economy"				
      textureFile = "gfx/ideas/laws/economy_system_4.dds"
    }
    spriteType = { 
