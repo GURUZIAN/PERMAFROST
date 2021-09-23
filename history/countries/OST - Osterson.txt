@@ -49,8 +49,7 @@ create_country_leader = {
 	expire = "2055.1.1"
 	ideology = technocratic_ideology
 	traits = {
-		exiled
-		union_man
+#
 	}
 }
 

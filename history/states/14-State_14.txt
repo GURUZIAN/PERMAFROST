@@ -1,0 +1,21 @@
+state={
+	id=14
+	name="STATE_14"
+	provinces={
+		3634 4618 8944 8968 
+	}
+	history={
+		victory_points = {
+			8968 5
+		}
+		owner = ONC
+		add_core_of = ONC
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+		}
+	}
+	manpower=5491
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

@@ -4,7 +4,7 @@ DKA = {
 	color = rgb { 100  14  1 }
 	color_ui = rgb { 150  20  2 }
 }
-ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+ONC = {
+	color = rgb { 72 61 139 }
+	color_ui = rgb { 80 71 149 }
 }

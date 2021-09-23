@@ -1,0 +1,23 @@
+
+state={
+	id=9
+	name="STATE_9"
+	provinces={
+		247 4432 8880 8885 8948 
+	}
+	history={
+		victory_points = {
+			8885 5
+		}
+		owner = ONC
+		add_core_of = ONC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+		}
+	}
+	manpower=7341
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

@@ -1,0 +1,22 @@
+state={
+	id=10
+	name="STATE_10"
+	provinces={
+		369 6174 6756 7959 8917 
+	}
+	history={
+		victory_points = {
+			6174 5
+		}
+		owner = ONC
+		add_core_of = ONC
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=3521
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}
