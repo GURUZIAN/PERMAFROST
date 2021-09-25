@@ -6,6 +6,10 @@ set_research_slots = 4
 set_stability = 0.7
 set_war_support = 0.2
 
+add_ideas = {
+has_idea = civilization_level_primitive_society
+}
+
 
 # Starting tech
 set_technology = {
@@ -49,8 +53,7 @@ create_country_leader = {
 	expire = "2055.1.1"
 	ideology = tribal_system
 	traits = {
-		exiled
-		union_man
+#
 	}
 }
 
