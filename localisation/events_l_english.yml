@@ -11,6 +11,7 @@
  economical_permafrost.9.a:0 "Our song is sung"
  economical_permafrost.10.t:0 "End?"
  economical_permafrost.10.d:0 "Our civilization is in the house. The survivors live on their own. Streets in corpses. Everything is on fire. Where did we make this mistake, my lord?"
+ economical_permafrost.10.a:0 "We are doomed"
 
 ###HOI IV CRAP###
  MINIMIZE_EVENT:0 "§GClick§! to Minimize. Event will be placed in the Event Queue under §HEvents and Decisions§!."

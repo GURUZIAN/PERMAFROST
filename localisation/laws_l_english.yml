@@ -51,3 +51,10 @@
  
  military:0 "Military"
  government_composition:0 "Government composition"
+ 
+ PF_serious_starvation:0 "Severe starvation"
+ PF_total_starvation:0 "Total starvation"
+ PF_medium_starvation:0 "Starvation"
+ PF_low_starvation:0 "Starvation risk"
+ PF_enough_food:0 "abundance of food"
+ PF_cornucopia:0 "Cornucopia"

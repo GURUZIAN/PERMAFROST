@@ -555,13 +555,13 @@ ideas = {
 				industrial_capacity_factory = -0.9
 				industrial_capacity_dockyard = -0.9
 				weekly_manpower = -2500
-				monthly_population = -0.9
+				monthly_population = -1
 				war_support_factor = -0.3
 				stability_weekly_factor = -0.3
 				war_support_weekly = -0.15
-				drift_defence_factor = -0.8
-				army_morale_factor = -0.3
-				army_org_factor = -0.3
+				drift_defence_factor = -0.95
+				army_morale_factor = -0.5
+				army_org_factor = -0.5
 			}
 			
 			allowed_to_remove = {
