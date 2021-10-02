@@ -51,10 +51,10 @@ idea_categories = {
 	
 	economy_laws = {
 		slot = economic_structure
-		slot = economic_development
-		slot = theorist
-		slot = trade_laws
 		slot = degree_militarization_economy
+		slot = degree_provision_population
+		slot = trade_laws
+		slot = theorist
 
 		ledger = civilian
 		
@@ -64,7 +64,7 @@ idea_categories = {
 	
 	military = {
 		slot = mobilization_laws
-		slot = air_chief
+		slot = army_chief
 		slot = high_command
 		slot = high_command
 		slot = high_command

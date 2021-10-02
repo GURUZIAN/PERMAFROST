@@ -1,3 +1,61 @@
 on_actions = {
-	# country 
+	on_startup = {
+		effect = {
+		every_state = {
+			if = {
+					limit = {
+					    AND = {					
+						    state_population > 0
+						    state_population < 2000
+					}
+				}
+		    add_dynamic_modifier = { modifier = consumer_1 }
+			}
+			    else_if = {
+					limit = {
+					    AND = {											
+						    state_population > 2000
+						    state_population < 4000
+					}
+				}
+				add_dynamic_modifier = { modifier = consumer_2 }
+			    }
+				else_if = {
+					limit = {
+					    AND = {											
+						    state_population > 4000
+						    state_population < 6000
+					}
+				}
+				add_dynamic_modifier = { modifier = consumer_3 }
+			    }
+				else_if = {
+					limit = {
+					    AND = {											
+						    state_population > 6000
+						    state_population < 8000
+					}
+				}
+				add_dynamic_modifier = { modifier = consumer_4 }
+			    }
+				else_if = {
+					limit = {
+					    AND = {											
+						    state_population > 8000
+							state_population < 20000
+					}
+				}
+				add_dynamic_modifier = { modifier = consumer_5 }
+			    }
+				else_if = {
+					limit = {
+					    AND = {											
+						    state_population > 20000
+					}
+				}
+				add_dynamic_modifier = { modifier = consumer_6 }
+			    }
+		    }
+		}
+	}
 }

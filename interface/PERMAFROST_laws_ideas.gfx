@@ -122,4 +122,30 @@ spriteTypes = {
      name = "GFX_idea_race_ferines"				
      textureFile = "gfx/ideas/laws/race_ferines.dds"
    }
+   
+   
+   spriteType = { 
+     name = "GFX_idea_PF_total_starvation"				
+     textureFile = "gfx/ideas/laws/total_starvation.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_PF_serious_starvation"				
+     textureFile = "gfx/ideas/laws/serious_starvation.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_PF_medium_starvation"				
+     textureFile = "gfx/ideas/laws/medium_starvation.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_PF_low_starvation"				
+     textureFile = "gfx/ideas/laws/low_starvation.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_PF_enough_food"				
+     textureFile = "gfx/ideas/laws/enough_food.dds"
+   }
+   spriteType = { 
+     name = "GFX_idea_PF_cornucopia"				
+     textureFile = "gfx/ideas/laws/cornucopia.dds"
+   }
 }

@@ -43,9 +43,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Dell Konager"
+	#name = "Dell Konager"
+	name = "Anton Belov"
 	desc = "POLITICS_DELL_DESC"
-	picture = "DELL.dds"
+	picture = "OST_L1.dds"
 	expire = "2055.1.1"
 	ideology = technocratic_ideology
 	traits = {

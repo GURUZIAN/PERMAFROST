@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+	
+		SD_idea_reserves = {
+
+			removal_cost = -1
+
+			picture = SD_reserves
+
+			modifier = {
+			}
+
+		}
+		
+		SD_small_protests = {
+
+			removal_cost = -1
+
+			picture = hol_liberation
+
+			modifier = {
+			}
+
+		}
+		
+		SD_medium_protests = {
+
+			removal_cost = -1
+
+			picture = hol_liberation
+
+			modifier = {
+			}
+
+		}
+		
+		SD_big_protests = {
+
+			removal_cost = -1
+
+			picture = hol_liberation
+
+			modifier = {
+			}
+
+		}
+		
+		SD_chaous_protests = {
+
+			removal_cost = -1
+
+			picture = hol_liberation
+
+			modifier = {
+			}
+
+		}
+	}
+}

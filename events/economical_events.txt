@@ -1,0 +1,219 @@
+###########################
+#economical_permafrost
+###########################
+
+add_namespace = economical_permafrost
+
+country_event = {
+	id = economical_permafrost.4
+	title = economical_permafrost.4.t	
+	desc = economical_permafrost.4.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+	AND = {
+    has_resources_amount = { resource = nutrition amount < 1 }
+	NOT = {
+	has_country_flag = starvating_began
+	        }
+	    }
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = {
+    set_country_flag = starvating_began	
+	set_country_flag = starvation_1
+        add_ideas = {
+    PF_low_starvation
+        }
+	}
+}
+
+country_event = {
+	id = economical_permafrost.5
+	title = economical_permafrost.5.t	
+	desc = economical_permafrost.5.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+	AND = {
+    has_resources_amount = { resource = nutrition amount < 10 }
+	has_resources_amount = { resource = nutrition amount > 1 }
+		NOT = {
+	has_country_flag = starvating_began
+	        }
+	    }
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    PF_enough_food
+        }
+	}
+}
+
+country_event = {
+	id = economical_permafrost.6
+	title = economical_permafrost.6.t	
+	desc = economical_permafrost.6.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+	has_resources_amount = { resource = nutrition amount > 10 }
+		NOT = {
+	has_country_flag = starvating_began
+	        }
+	}
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+
+    immediate = { 
+        add_ideas = {
+    PF_cornucopia
+        }
+	}
+}
+
+###
+
+country_event = {
+	id = economical_permafrost.7
+	title = economical_permafrost.7.t
+	desc = economical_permafrost.7.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = economical_permafrost.7.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}
+		custom_effect_tooltip = PF_FOOD_RESERVES_TT
+		hidden_effect = {
+		add_ideas = {
+		SD_idea_reserves
+			}
+		}
+	}
+}
+
+country_event = {
+	id = economical_permafrost.8
+	title = economical_permafrost.8.t
+	desc = economical_permafrost.8.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = economical_permafrost.8.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}	
+		custom_effect_tooltip = PF_FOOD_INT_STARVATION_TT
+		hidden_effect = {
+		add_ideas = {
+		PF_medium_starvation
+			}
+		remove_ideas = {
+		SD_idea_reserves
+			}
+		}
+	}
+}
+
+country_event = {
+	id = economical_permafrost.9
+	title = economical_permafrost.9.t
+	desc = economical_permafrost.9.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = economical_permafrost.9.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}	
+		custom_effect_tooltip = PF_FOOD_INT_STARVATION_TT
+		hidden_effect = {
+		add_ideas = {
+		PF_serious_starvation
+			}
+		}
+	}
+}
+
+country_event = {
+	id = economical_permafrost.10
+	title = economical_permafrost.10.t
+	desc = economical_permafrost.10.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = economical_permafrost.10.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}	
+		custom_effect_tooltip = PF_FOOD_INT_STARVATION_TT
+		hidden_effect = {
+		add_ideas = {
+		PF_total_starvation
+			}
+		}
+	}
+}
+
+country_event = {
+	id = economical_permafrost.11
+	title = economical_permafrost.11.t
+	desc = economical_permafrost.11.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = economical_permafrost.11.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}	
+		hidden_effect = {
+		add_ideas = {
+		PF_total_starvation
+			}
+		}
+	}
+}

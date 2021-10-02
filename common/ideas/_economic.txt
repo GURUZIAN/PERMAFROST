@@ -542,4 +542,120 @@ ideas = {
 			}
 		}
 	}
+	
+	degree_provision_population = { 
+		law = yes
+		use_list_view = yes
+		
+		PF_total_starvation = {
+		
+		    cost = 0
+		
+			modifier = {
+				industrial_capacity_factory = -0.9
+				industrial_capacity_dockyard = -0.9
+				weekly_manpower = -2500
+				monthly_population = -0.9
+				war_support_factor = -0.3
+				stability_weekly_factor = -0.3
+				war_support_weekly = -0.15
+				drift_defence_factor = -0.8
+				army_morale_factor = -0.3
+				army_org_factor = -0.3
+			}
+			
+			allowed_to_remove = {
+				has_country_flag = allowed_to_change_provision_degree
+			}
+		}
+		
+		PF_serious_starvation = {
+		
+		    cost = 0
+		
+			modifier = {
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				weekly_manpower = -1000
+				monthly_population = -0.7
+				war_support_factor = -0.1
+				stability_weekly_factor = -0.15
+				war_support_weekly = -0.10
+				drift_defence_factor = -0.6
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+			}
+			
+			allowed_to_remove = {
+				has_country_flag = allowed_to_change_provision_degree
+			}
+		}
+		
+		PF_medium_starvation = {
+		
+		cost = 0
+		
+			modifier = {
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.35
+				weekly_manpower = -500
+				monthly_population = -0.55
+				war_support_factor = -0.08
+				stability_weekly_factor = -0.10
+				war_support_weekly = -0.05
+				drift_defence_factor = -0.5
+			}
+			
+			allowed_to_remove = {
+				has_country_flag = allowed_to_change_provision_degree
+			}
+		}
+		
+		PF_low_starvation = {
+		
+		cost = 0
+		
+			modifier = {
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				monthly_population = -0.30
+			}
+			
+			allowed_to_remove = {
+				has_country_flag = allowed_to_change_provision_degree
+			}
+		}
+		
+		PF_enough_food = {
+		
+		cost = 0
+		
+		    default = yes
+			
+			modifier = {
+				monthly_population = +0.15
+			}
+			
+			allowed_to_remove = {
+				has_country_flag = allowed_to_change_provision_degree
+			}
+		}
+		
+		PF_cornucopia = {
+		
+		cost = 0
+		
+			modifier = {
+				industrial_capacity_factory = +0.10
+				industrial_capacity_dockyard = +0.10
+				monthly_population = +0.30
+			}
+			
+			allowed_to_remove = {
+				has_country_flag = allowed_to_change_provision_degree
+			}
+		}
+	}
 }
+
+

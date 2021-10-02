@@ -5,4 +5,14 @@ spriteTypes = {
      textureFile = "gfx/PERMAFROST_album_art.dds"
      noOfFrames = 2
    }
+   spriteType = { 
+     name = "GFX_modifiers_consumption"				
+     textureFile = "gfx/interface/state_modifiers/modifiers_consumption.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_decision_category_PF_starving"				
+     textureFile = "gfx/interface/decisions/decision_category_starving.dds"
+     noOfFrames = 1
+   }
 }

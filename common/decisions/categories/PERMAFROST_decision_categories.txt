@@ -1,0 +1,12 @@
+#######################
+##### Yugoslavia ######
+#######################
+
+starving = {
+	
+	icon = PF_starving
+
+	visible = {
+		has_country_flag = starvating_began
+	}
+}

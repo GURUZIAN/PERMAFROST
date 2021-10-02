@@ -61,7 +61,7 @@ great_war_hero
 }
 
 create_country_leader = {
-	name = "Victor Barnash"
+	name = "Oleg Seriy"
 	desc = "POLITICS_DELL_DESC"
 	picture = "DKA_leader2.dds"
 	expire = "2059.1.1"

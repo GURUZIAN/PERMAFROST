@@ -517,6 +517,8 @@ ideas = {
 				has_government = technocratic
 				has_government = fascism
 				has_government = communism
+				has_idea = political_system_tyranny
+				has_idea = political_system_autocracy
 				}
 			}
 			

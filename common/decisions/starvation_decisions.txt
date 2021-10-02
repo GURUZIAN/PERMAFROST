@@ -1,0 +1,143 @@
+starving = {
+	SD_reserves = {
+
+		icon = generic_civil_support
+
+		available = {
+		NOT = {
+			has_idea = PF_low_starvation
+			}
+			has_idea = SD_idea_reserves
+		}
+
+		days_mission_timeout = 5
+
+		activation = {
+			AND = {
+		    has_country_flag = starvation_1
+			NOT = {
+			has_idea = SD_idea_reserves
+				}
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+		    clr_country_flag = starvation_1
+			set_country_flag = starvation_2
+			country_event = {
+				id = economical_permafrost.7
+			}
+		}
+	}
+	run_out_of_reserves = {
+
+		icon = generic_civil_support
+
+		available = {
+		NOT = {
+			has_idea = PF_low_starvation
+			}
+		}
+
+		days_mission_timeout = 50
+
+		activation = {
+			AND = {
+		    has_country_flag = starvation_2
+			NOT = {
+			has_idea = SD_idea_reserves
+				}
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+		    set_country_flag = starvation_3
+		    clr_country_flag = starvation_2
+			country_event = {
+				id = economical_permafrost.8
+			}
+		}
+	}
+	PF_canibalism = {
+
+		icon = generic_civil_support
+
+		available = {
+		NOT = {
+			has_idea = PF_medium_starvation
+			}
+		}
+
+		days_mission_timeout = 75
+
+		activation = {
+			AND = {
+		    has_country_flag = starvation_3
+			NOT = {
+			has_idea = SD_idea_reserves
+				}
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+		    clr_country_flag = starvation_3
+			set_country_flag = starvation_4
+			country_event = {
+				id = economical_permafrost.9
+			}
+		}
+	}
+	
+	PF_death_everywhere = {
+
+		icon = generic_civil_support
+
+		available = {
+		NOT = {
+			has_idea = PF_serious_starvation
+			}
+		}
+
+		days_mission_timeout = 100
+
+		activation = {
+			AND = {
+		    has_country_flag = starvation_4
+			NOT = {
+			has_idea = SD_idea_reserves
+				}
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			clr_country_flag = starvation_4
+			country_event = {
+				id = economical_permafrost.10
+			}
+		}
+	}
+}

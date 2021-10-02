@@ -18,10 +18,13 @@ country_event = {
 		has_civil_war = yes
 		has_country_flag = advanced_civilwar
 		}
+		NOT = {
+		has_idea = management_efficiency_collapse
+		}
 	}
 
 	mean_time_to_happen = { 
-		days = 1 
+		days = 1
 	}
 
     immediate = { 
@@ -44,6 +47,9 @@ country_event = {
 	OR = {
 		has_stability < 0.2
 		has_war_support < 0.2
+		}
+	NOT = {
+		has_idea = management_efficiency_low
 		}
 	}
 
@@ -73,6 +79,9 @@ country_event = {
 		has_stability < 0.5
 		has_war_support > 0.2
 		}
+		NOT = {
+		has_idea = management_efficiency_mediocre
+		}
 	}
 
 	mean_time_to_happen = { 
@@ -101,6 +110,9 @@ country_event = {
 		has_stability < 0.75
 		has_war_support > 0.2
 		}
+		NOT = {
+		has_idea = management_efficiency_high
+		}
 	}
 
 	mean_time_to_happen = { 
@@ -128,6 +140,9 @@ country_event = {
 		has_stability > 0.75
 		has_war_support > 0.2
 		}
+		NOT = {
+		has_idea = management_efficiency_absolute
+		}
 	}
 
 	mean_time_to_happen = { 
@@ -138,5 +153,95 @@ country_event = {
         add_ideas = {
     management_efficiency_absolute
         }
+	}
+}
+
+###test things###
+
+country_event = {
+	id = management_efficiency.6  
+	title = management_efficiency.6.t	
+	desc = management_efficiency.6.desc	
+	picture = GFX_			
+	
+	hidden = no
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = management_efficiency.6.a
+			ROOT = {
+				if = {
+					limit = {
+					    all_state = {					
+						    state_population > 32000
+					}
+				}
+				country_event = {
+                id = management_efficiency.7
+                days = 1
+                }
+			}
+			    else_if = {
+					limit = {
+					    all_state = {											
+						    state_population > 1000
+					}
+					}
+					country_event = {
+                    id = management_efficiency.6
+                    days = 1
+                }
+			}
+		}
+	}
+} 
+
+country_event = {
+	id = management_efficiency.7 
+	title = management_efficiency.7.t	
+	desc = management_efficiency.7.desc	
+	picture = GFX_			
+	
+	hidden = no
+
+	mean_time_to_happen = { 
+		days = 1 
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = management_efficiency.7.a
+			ROOT = {
+				if = {
+					limit = {
+					    all_state = {    
+						    state_population > 2000
+					}
+				}
+				country_event = {
+                id = management_efficiency.7
+                days = 1
+                }
+			}
+			    else_if = {
+					limit = {
+					    all_state = {
+                            NOT = {						
+						    state_population > 2000
+						}
+					}
+					}
+					country_event = {
+                    id = management_efficiency.6
+                    days = 1
+                }
+			}
+		}
 	}
 }

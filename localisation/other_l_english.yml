@@ -1,0 +1,6 @@
+﻿l_english:
+ PRODUCTION_MATERIALS_NUTRITION:0 "Nutrition"
+ NUTRITION_desc:0 "Nutrition is one of the foundations in human life as a source of energy for the vital activity of the body."
+ 
+ PF_FOOD_RESERVES_TT: "We will have time to deal with starvation in time.\n"
+ PF_FOOD_INT_STARVATION_TT: "§RStarvation will intensify.\n§R"
