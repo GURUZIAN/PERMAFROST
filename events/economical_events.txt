@@ -95,7 +95,7 @@ country_event = {
 	id = economical_permafrost.7
 	title = economical_permafrost.7.t
 	desc = economical_permafrost.7.d
-	picture = starvation_permafrost_2
+	picture = GFX_report_event_starvation_permafrost_3
 	
 	is_triggered_only = yes
 	
@@ -120,7 +120,7 @@ country_event = {
 	id = economical_permafrost.8
 	title = economical_permafrost.8.t
 	desc = economical_permafrost.8.d
-	picture = starvation_permafrost_2
+	picture = GFX_report_event_starvation_permafrost_2
 	
 	is_triggered_only = yes
 	
@@ -173,7 +173,7 @@ country_event = {
 	id = economical_permafrost.10
 	title = economical_permafrost.10.t
 	desc = economical_permafrost.10.d
-	picture = starvation_permafrost_1
+	picture = GFX_report_event_starvation_permafrost_1
 	
 	is_triggered_only = yes
 	
@@ -198,7 +198,7 @@ country_event = {
 	id = economical_permafrost.11
 	title = economical_permafrost.11.t
 	desc = economical_permafrost.11.d
-	picture = starvation_permafrost_1
+	picture = GFX_report_event_starvation_permafrost_1
 	
 	is_triggered_only = yes
 	
@@ -222,7 +222,7 @@ country_event = {
 	id = economical_permafrost.12
 	title = economical_permafrost.12.t	
 	desc = economical_permafrost.12.desc	
-	picture = GFX_report_event_soviet_soldiers			
+	picture = GFX_report_event_starvation_permafrost_3
 	
 	hidden = no
 

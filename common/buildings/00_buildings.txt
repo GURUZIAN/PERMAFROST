@@ -6,7 +6,6 @@ buildings = {
 
 
 	research_complex = {
-		show_on_map = 1
 		base_cost = 15000
 		RESEARCH_SHARING_PER_COUNTRY_BONUS_FACTOR = 0.02
 		LICENSE_PURCHASE_COST = -0.02
@@ -15,6 +14,17 @@ buildings = {
 		max_level = 1
 		shares_slots = yes
 		value = 3
+	}
+	
+	hunting_place = {
+		base_cost = 3000
+		icon_frame = 19
+		local_resources_nutrition = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 1 # This is the max unlock level
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
 	}
 	
 	hydro_farms = {
@@ -38,6 +48,64 @@ buildings = {
 		value = 4
 		infrastructure_construction_effect = yes
 	}
+	
+	steel_mill = {
+		show_on_map = 1
+		base_cost = 6750
+		icon_frame = 19
+		local_resources_steel = 2 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 2 # This is the max unlock level
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+	}
+	
+	chromium_industry = {
+		show_on_map = 1
+		base_cost = 8750
+		icon_frame = 22
+		local_resources_chromium = 2 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 2 # This is the max unlock level
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+	}
+	
+	tungsten_industry = {
+		show_on_map = 1
+		base_cost = 7250
+		icon_frame = 21
+		local_resources_tungsten = 2 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 2 # This is the max unlock level
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+	}
+	
+	aluminium_industry = {
+		show_on_map = 1
+		base_cost = 7250
+		icon_frame = 20
+		local_resources_aluminium = 2 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 2 # This is the max unlock level
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+	}
+	
+	#workshops = {
+	#	base_cost = 3000
+	#	military_production = 1
+	#	icon_frame = 20
+	#	max_level = 1
+	#	shares_slots = yes
+	#	value = 5
+	#	infrastructure_construction_effect = yes
+	#}
 	
 	###hoi iv###
 
@@ -157,8 +225,8 @@ buildings = {
 		show_on_map = 1
 		base_cost = 14500
 		icon_frame = 11
-		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		local_resources_oil = 1 # May use local_resources_ + any resource name
+		#local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = yes
@@ -172,7 +240,7 @@ buildings = {
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 7000
-		icon_frame = 15
+		icon_frame = 16
 		#max_level = 1
 		shares_slots = yes
 		value = 5
@@ -181,6 +249,18 @@ buildings = {
 		
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
+	}
+	
+	synthetic_rubber_refinery = {
+		show_on_map = 1
+		base_cost = 8750
+		icon_frame = 15
+		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
 	}
 
 	radar_station = {

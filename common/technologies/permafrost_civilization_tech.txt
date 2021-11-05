@@ -1,0 +1,793 @@
+technologies = {
+    ###human past###
+	
+	civilization_tech = {
+		
+		path = {
+			leads_to_tech = using_the_nature_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=10 y=1 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	using_the_nature_tech = {
+		
+		enable_building = {
+			building = hunting_place
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = primitive_tools_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=10 y=3 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	primitive_tools_tech = {
+		
+		industrial_capacity_factory = 0.05
+		
+		path = {
+			leads_to_tech = workshops_tech 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = wheel_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=10 y=7 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	workshops_tech = {
+		
+		enable_building = {
+			building = arms_factory
+			level = 1
+		}
+		
+		enable_building = {
+			building = industrial_complex
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = work_with_metal_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=8 y=9 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	work_with_metal_tech = {
+		
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = melee_weapon_producing_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.3
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=8 y=11 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	melee_weapon_producing_tech = {
+		
+		path = {
+			leads_to_tech = steel_tools_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = firearms_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = schools_tech
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=8 y=13 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	firearms_tech = {
+		
+		path = {
+			leads_to_tech = military_manufactories_tech
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=7 y=17 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	military_manufactories_tech = {
+		
+		path = {
+			leads_to_tech = improvement_military_production
+			research_cost_coeff = 1
+		}
+		
+		enable_building = {
+			building = arms_factory
+			level = 2
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=7 y=19 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	improvement_military_production = {
+		
+		path = {
+			leads_to_tech = after_the_end_tech
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=7 y=21 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	schools_tech = {
+		
+		path = {
+			leads_to_tech = simple_scientific_equipment_tech
+			research_cost_coeff = 1
+		}
+		
+		research_speed_factor = 0.05
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=3 y=17 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	simple_scientific_equipment_tech = {
+		
+		path = {
+			leads_to_tech = science_community
+			research_cost_coeff = 1
+		}
+		
+		research_speed_factor = 0.05
+		
+		research_cost = 1.4
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=3 y=19 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	science_community = {
+		
+		path = {
+			leads_to_tech = after_the_end_tech
+			research_cost_coeff = 1
+		}
+		
+		research_speed_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=3 y=21 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	wheel_tech = {
+	
+	    production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = road_building_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=12 y=9}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	road_building_tech = {
+	
+	    enable_building = {
+			building = infrastructure
+			level = 3
+		}
+		
+		path = {
+			leads_to_tech = primitive_fortification_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=12 y=11}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	primitive_fortification_tech = {
+	
+	    enable_building = {
+			building = bunker
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = steel_tools_tech 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = manufactories_tech 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mines_tech
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=12 y=13}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	steel_tools_tech = {
+	
+	    industrial_capacity_factory = 0.05
+		
+		path = {
+			leads_to_tech = after_the_end_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=10 y=16}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	manufactories_tech = {
+	
+	    enable_building = {
+			building = industrial_complex
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = producing_improvisation 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=13 y=17}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	producing_improvisation = {
+	
+	    industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		line_change_production_efficiency_factor = 0.1
+		
+		path = {
+			leads_to_tech = producing_standardisation 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=13 y=19}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	producing_standardisation = {
+	
+	    production_factory_max_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		
+		path = {
+			leads_to_tech = after_the_end_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=13 y=21}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	mines_tech = {
+	
+	    local_resources_factor = 0.10
+		
+		path = {
+			leads_to_tech = improve_mine_tools 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=17 y=17}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	improve_mine_tools = {
+	
+	    local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = pf_excavation1 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=17 y=19}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	pf_excavation1 = {
+		
+	    local_resources_factor = 0.05
+		
+		path = {
+			leads_to_tech = metal_foundry1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = chromium_industry1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tungsten_industry1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aluminium_industry1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=17 y=21}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	metal_foundry1 = {
+		
+		enable_building = {
+			building = steel_mill
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = after_the_end_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=19 y=23}
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				steel > 10
+			}
+			modifier = {
+				factor = 0.5
+				steel > 20
+			}	
+			modifier = {
+				factor = 1
+				steel > 30
+			}			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	chromium_industry1 = {
+		
+		enable_building = {
+			building = chromium_industry
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = after_the_end_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=21 y=23}
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				chromium > 10
+			}
+			modifier = {
+				factor = 0.5
+				chromium > 20
+			}	
+			modifier = {
+				factor = 1
+				chromium > 30
+			}
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	tungsten_industry1 = {
+		
+		enable_building = {
+			building = tungsten_industry
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = after_the_end_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=23 y=23}
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				tungsten > 10
+			}
+			modifier = {
+				factor = 0.5
+				tungsten > 20
+			}	
+			modifier = {
+				factor = 1
+				tungsten > 30
+			}	
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	aluminium_industry1 = {
+
+
+		enable_building = {
+			building = aluminium_industry
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = after_the_end_tech 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 2000
+		
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=25 y=23}
+		}
+			
+		categories = {
+			industry
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				aluminium > 10
+			}
+			modifier = {
+				factor = 0.5
+				aluminium > 20
+			}	
+			modifier = {
+				factor = 1
+				aluminium > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			aluminium = -2.0
+		}		
+	}
+	
+
+    ###after the end###
+	
+	after_the_end_tech = {
+		
+		research_cost = 2
+		start_year = 2070
+		folder = {
+			name = permafrost_civilization_tech_folder
+			position = { x=10 y=50 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+}
