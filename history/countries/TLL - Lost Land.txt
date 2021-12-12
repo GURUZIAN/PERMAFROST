@@ -5,8 +5,6 @@ oob = "TLL_2071"
 set_research_slots = 4
 set_stability = 0.4
 set_war_support = 0.1
-#add_ideas = {
-#}
 
 
 # Starting tech
