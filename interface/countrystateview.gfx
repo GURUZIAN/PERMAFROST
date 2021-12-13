@@ -147,11 +147,14 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
+
+#Change 1
 	spriteType = {
 		name = "GFX_buildings_strip"
 		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
 		noOfFrames = 16
 	}
+#
 
 	spriteType = {
 		name = "GFX_build_slot_bg"

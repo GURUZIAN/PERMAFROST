@@ -457,16 +457,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_technocratic_group"
-		texturefile = "gfx/interface/ideologies/technocratic_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_tribal_group"
-		texturefile = "gfx/interface/ideologies/tribal_group.dds"
-	}
-
-	spriteType = {
 		name = "GFX_ideology_anarchism"
 		texturefile = "gfx/interface/ideologies/anarchism.dds"
 	}
