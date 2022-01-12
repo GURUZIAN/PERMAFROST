@@ -206,6 +206,12 @@ ideas = {
 				war_support_factor = 0.5
 			}
 			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
+			
 			cancel_if_invalid = yes
 
 			ai_will_do = {
@@ -241,13 +247,10 @@ ideas = {
 			}
 
 			allowed_to_remove = {
-			NOT = {
-				has_country_leader = {
-                name = "Michail Konager"
-                ruling_only = yes
-                }
-            }
-	    }
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
 			
 			cancel_if_invalid = yes
 
@@ -281,6 +284,12 @@ ideas = {
 				puppet_cost_factor = -0.1
 				autonomy_manpower_share = -0.1
 			}
+			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
 			
 			cancel_if_invalid = yes
 
@@ -321,6 +330,12 @@ ideas = {
    			}
 			
 			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
+			
+			allowed_to_remove = {
 				has_war_support > 0.5
 			}
 		}
@@ -351,6 +366,12 @@ ideas = {
 				mobilization_speed = 0.1
 				surrender_limit = 0.2
 			}
+			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
 			
 			cancel_if_invalid = yes
 
@@ -386,6 +407,12 @@ ideas = {
 			stability_factor = 0.4
 			political_power_gain = 0.15
 			}
+			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
 			
 			cancel_if_invalid = no
 
@@ -423,6 +450,12 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
+			
 			cancel_if_invalid = no
 
 			ai_will_do = {
@@ -458,13 +491,10 @@ ideas = {
 			}
 			
 			allowed_to_remove = {
-			NOT = {
-				has_country_leader = {
-                name = "Michail Konager"
-                ruling_only = yes
-                }
-            }
-	    }
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
 			
 			cancel_if_invalid = no
 
@@ -494,6 +524,12 @@ ideas = {
 			party_popularity_stability_factor  = 0.5
 			research_speed_factor = 0.05
 			}
+			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
 			
 			cancel_if_invalid = no
 
@@ -528,6 +564,12 @@ ideas = {
 				war_support_factor = +0.20
 			}
 			
+			allowed_to_remove = {
+				NOT = {
+				has_country_flag = interisting_country
+				}			
+					}
+			
 			cancel_if_invalid = no
 
 			ai_will_do = {
@@ -553,7 +595,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = -0.5
 				war_support_factor = -0.1
-				political_power_factor = -0.05
+				political_power_factor = -0.50
 				army_org_factor = -0.1
 			}
 			
@@ -581,6 +623,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = -0.25
 				war_support_factor = -0.05
+				political_power_factor = -0.35
 				army_org_factor = -0.05
 			}
 			
@@ -607,6 +650,7 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = -0.10
+				political_power_factor = -0.20
 			}
 			
 			allowed_to_remove = {
@@ -636,7 +680,6 @@ ideas = {
 				drift_defence_factor = +0.25
 				war_support_factor = +0.05
 				army_org_factor = +0.05
-			    political_power_gain = 0.05
 			}
 			
 			allowed_to_remove = {
