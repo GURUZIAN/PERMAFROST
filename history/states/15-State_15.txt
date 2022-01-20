@@ -1,0 +1,25 @@
+state={
+	id=15
+	name="STATE_15"
+	provinces={
+		8999 
+	}
+	history={
+		victory_points = {
+			8999 5
+		}
+		owner = POG
+		add_core_of = POG
+		buildings = {
+			8999 = {
+				naval_base = 2
+			}
+			infrastructure = 6
+			industrial_complex = 2
+			hydro_farms = 1
+		}
+	}
+	manpower=9375
+	buildings_max_level_factor=1.000
+	state_category = city 
+}

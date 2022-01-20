@@ -11,6 +11,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+			hunting_place = 1
 		}
 		owner = FKP
 		add_core_of = FKP

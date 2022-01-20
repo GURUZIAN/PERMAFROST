@@ -8,3 +8,11 @@ ONC = {
 	color = rgb { 72 61 139 }
 	color_ui = rgb { 80 71 149 }
 }
+PBL = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
+}
+REN = {
+	color = rgb { 107 71 34 }
+	color_ui = rgb { 107 71 34 }
+}

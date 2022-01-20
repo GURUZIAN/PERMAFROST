@@ -1,0 +1,26 @@
+state={
+	id=23
+	name="STATE_23"
+	provinces={
+		1265 2037 4620 5590 
+	}
+		history={
+		victory_points = {
+			5590 5
+		}
+		owner = PBL
+		add_core_of = PBL
+		buildings = {
+			4620 = {
+				naval_base = 1
+			}
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			hydro_farms = 2
+		}
+	}
+	manpower=6234
+	buildings_max_level_factor=1.000
+	state_category = town
+}

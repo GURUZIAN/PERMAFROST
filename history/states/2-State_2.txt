@@ -20,6 +20,7 @@ state={
 			}
 			infrastructure = 4
 			industrial_complex = 3
+			hydro_farms = 2
 		}
 	}
 	manpower=5142

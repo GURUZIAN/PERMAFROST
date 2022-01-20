@@ -1,26 +1,25 @@
 state={
-	id=8
-	name="STATE_8"
+	id=21
+	name="STATE_21"
 	provinces={
-		3320 3425 6950 8916 8955 
+		2540 4742 7133 8956 8960 8976 8993 
 	}
 	history={
 		victory_points = {
-			3425 10
+			8956 5
 		}
-		owner = TLL
-		add_core_of = TLL
+		victory_points = {
+			2540 5
+		}
+		owner = PBL
+		add_core_of = PBL
 		buildings = {
-			3425 = {
-				naval_base = 5
-			}
 			infrastructure = 4
-			industrial_complex = 1
 			hydro_farms = 1
 			arms_factory = 1
 		}
 	}
-	manpower=4142
+	manpower=9636
 	buildings_max_level_factor=1.000
 	state_category = town
 }
