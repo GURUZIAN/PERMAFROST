@@ -6,7 +6,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SD_reserves
+			picture = OST_COT
 
 			modifier = {
 			war_support_factor = -0.10

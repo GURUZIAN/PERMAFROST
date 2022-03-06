@@ -5,4 +5,32 @@ spriteTypes = {
      textureFile = "gfx/ideas/SD_reserves.dds"
      noOfFrames = 1
    }
+    ###OST###
+	spriteType = { 
+     name = "GFX_idea_OST_COT"				
+     textureFile = "gfx/ideas/country/OST/OST_COT.dds"
+     noOfFrames = 1
+   }
+    ###DKA###
+	spriteType = { 
+     name = "GFX_idea_DKA_greatpower"				
+     textureFile = "gfx/ideas/country/DKA/DKA_great_power.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_idea_DKA_secretsocieties"				
+     textureFile = "gfx/ideas/country/DKA/DKA_secret_societies.dds"
+     noOfFrames = 1
+   }
+   ###PBL###
+	spriteType = { 
+     name = "GFX_idea_PBL_barbarians"				
+     textureFile = "gfx/ideas/country/PBL/PBL_barbarians_east.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_idea_PBL_corruption"				
+     textureFile = "gfx/ideas/country/PBL/PBL_corruption.tga.dds"
+     noOfFrames = 1
+   }
 }

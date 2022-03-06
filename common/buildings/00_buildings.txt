@@ -16,39 +16,6 @@ buildings = {
 		value = 3
 	}
 	
-	hunting_place = {
-		base_cost = 3000
-		icon_frame = 19
-		local_resources_nutrition = 1 # May use local_resources_ + any resource name
-		refinery = yes
-		max_level = 1 # This is the max unlock level
-		shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-	}
-	
-	hydro_farms = {
-		base_cost = 10000
-		icon_frame = 17
-		local_resources_nutrition = 7 # May use local_resources_ + any resource name
-		refinery = yes
-		max_level = 2 # This is the max unlock level
-		shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-	}
-	
-	advanced_hydro_farms = {
-		base_cost = 17500
-		icon_frame = 18
-		local_resources_nutrition = 15 # May use local_resources_ + any resource name
-		refinery = yes
-		max_level = 3 # This is the max unlock level
-		shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-	}
-	
 	steel_mill = {
 		show_on_map = 1
 		base_cost = 6750

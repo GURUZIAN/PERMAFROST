@@ -17,6 +17,11 @@ service_by_requirement
 set_technology = {
 }
 
+add_ideas = {
+DKA_idea_secret_societies
+DKA_idea_splendor
+}
+
 set_convoys = 1
 
 set_politics = {

@@ -1,0 +1,30 @@
+ideas = {
+
+	country = {
+	
+		DKA_idea_splendor = {
+
+			removal_cost = -1
+
+			picture = DKA_greatpower
+
+			modifier = {
+			war_support_factor = +0.10
+			drift_defence_factor = +0.50
+			stability_factor = +0.25
+			}
+		}
+		DKA_idea_secret_societies = {
+
+			removal_cost = -1
+
+			picture = DKA_secretsocieties
+
+			modifier = {
+			drift_defence_factor = -0.40
+			stability_factor = -0.15
+			civilian_intel_factor = 3
+			}
+		}
+	}
+}

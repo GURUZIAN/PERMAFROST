@@ -11,6 +11,10 @@ set_war_support = 0.2
 set_technology = {
 }
 
+add_ideas = {
+OST_idea_country_of_traitors
+}
+
 set_convoys = 3
 
 set_politics = {
