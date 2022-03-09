@@ -5,8 +5,10 @@ oob = "WSU_2071"
 set_research_slots = 4
 set_stability = 0.4
 set_war_support = 0.1
-#add_ideas = {
-#}
+add_ideas = {
+PBL_bad_army_reputation
+PBL_total_corruption
+}
 
 
 # Starting tech

@@ -2,18 +2,30 @@ ideas = {
 
 	country = {
 	
-		OST_idea_country_of_traitors = {
+		PBL_total_corruption = {
 
 			removal_cost = -1
 
-			picture = OST_COT
+			picture = PBL_corruption
 
 			modifier = {
-			war_support_factor = -0.10
-			drift_defence_factor = -0.35
-			production_speed_buildings_factor = -0.1
-			surrender_limit = -0.3
-			stability_factor = -0.4
+			stability_factor = -0.5
+			trade_opinion_factor = -0.25
+			conscription = -0.025
+			army_org_factor = -0.15
+			}
+		}
+		PBL_bad_army_reputation = {
+
+			removal_cost = -1
+
+			picture = PBL_barbarians
+
+			modifier = {
+			conscription = -0.05
+			army_org_factor = -0.05
+			resistance_growth_on_our_occupied_states = -0.5
+			occupation_cost = 0.5
 			}
 		}
 	}

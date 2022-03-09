@@ -7,7 +7,7 @@ spriteTypes = {
    }
     ###OST###
 	spriteType = { 
-     name = "GFX_idea_OST_COT"				
+     name = "GFX_idea_OST_country_of_traitors"				
      textureFile = "gfx/ideas/country/OST/OST_COT.dds"
      noOfFrames = 1
    }

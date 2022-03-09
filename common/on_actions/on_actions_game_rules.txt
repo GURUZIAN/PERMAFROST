@@ -1,0 +1,24 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_create_faction
+						option = BLOCKED
+					}
+				}
+				set_global_flag = NJF_no_allow_create_faction
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_join_faction
+						option = BLOCKED
+					}
+				}
+				set_global_flag = NJF_no_allow_join_faction
+			}
+		}
+	}
+}

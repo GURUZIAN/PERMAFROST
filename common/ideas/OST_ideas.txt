@@ -6,7 +6,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = OST_COT
+			picture = OST_country_of_traitors
 
 			modifier = {
 			war_support_factor = -0.10
