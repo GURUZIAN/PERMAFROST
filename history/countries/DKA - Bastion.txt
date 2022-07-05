@@ -47,8 +47,8 @@ create_country_leader = {
 	expire = "2059.1.1"
 	ideology = utilitarism_ideology
 	traits = {
-great_architect
-great_war_hero
+	great_architect
+	great_war_hero
 	}
 }
 

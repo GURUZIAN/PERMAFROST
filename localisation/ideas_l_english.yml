@@ -3,6 +3,19 @@
  SD_idea_reserves:0 "Last reserves"
  SD_idea_reserves_desc:0 "A small barrier between starvation and normal life."
  
+ ###OST###
+ 
+ OST_idea_country_of_traitors:0 "A bunch of cowards and traitors"
+ OST_idea_country_of_traitors_desc:0 "After our escape from the Association of Immortal Humanity and the occupation of the lands of the last Ferals in the east, we have a bad reputation among the local population and neighboring countries. They all believe that we are just cowards and traitors with whom they should have nothing to do. Even our supporters of the technocratic idea believe that we should not have betrayed Dr. Oleg and fled the country when the one-month rebellion failed, and that we should have stood to the end."
+ 
+ 
+ ###DKA###
+ 
+ DKA_idea_splendor:0 "Dominance in the region"
+ DKA_idea_splendor_desc:0 "We are the most powerful and influential country in this region, and nothing can defeat us, at least for now."
+ DKA_idea_secret_societies:0 "Secret societies"
+ DKA_idea_secret_societies_desc:0 "After the coup and the establishment of a new order in bunker 421A, our house, Dr. Oleg, the old government and other supporters of the technocratic order went underground. They planned their plot for a year, carefully preparing for it. And on the first of November 1 year from the new era of mankind or 2070 years from the incident, the unthinkable happened. For a whole month, the rebels tried to seize power, but they failed and we won this fight, but at the cost of many lives. This bloody event is known as the "one-month rebellion". Today, the rebellion is still alive and preparing for the next, more painful blow."
+ 
  ###Hoi iv crap###
  fascist_influence:0 "Fascist Influence"
  fascist_influence_desc:0 "Fascist pressure has made fascism very popular, and the country is susceptible to align with other fascists."
