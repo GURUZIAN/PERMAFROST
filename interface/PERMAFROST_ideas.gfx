@@ -30,7 +30,54 @@ spriteTypes = {
    }
    spriteType = { 
      name = "GFX_idea_PBL_corruption"				
-     textureFile = "gfx/ideas/country/PBL/PBL_corruption.tga.dds"
+     textureFile = "gfx/ideas/country/PBL/PBL_corruption.dds"
      noOfFrames = 1
    }
-}
+   
+   ###focuses###
+   spriteType = { 
+     name = "GFX_DKA_fallen_soldier"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_fallen_sold.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_rise"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_rise.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_their_hero"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_their_hero.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_party_rat"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_party_rat.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_people"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_people.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_our_leader"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_our_leader.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_doctor"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_doctor.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_motherland"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_motherland.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_flag"				
+     textureFile = "gfx/ideas/country/DKA/DKA_focus_flag.dds"
+     noOfFrames = 1
+   }
+} 

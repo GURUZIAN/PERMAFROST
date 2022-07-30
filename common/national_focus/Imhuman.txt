@@ -1,0 +1,202 @@
+focus_tree = {
+	id = imhuman_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DKA
+		}
+	}
+
+	focus = {
+		id = DKA_focus_fallen_soldier
+		icon = GFX_DKA_fallen_soldier
+		x = 5
+		y = 0
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_focus_rise
+		icon = GFX_DKA_rise
+		x = 5
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = DKA_focus_fallen_soldier }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_their_hero
+		icon = GFX_DKA_their_hero
+		x = 3
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = DKA_focus_rise }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_party_rat
+		icon = GFX_DKA_party_rat
+		x = 7
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = DKA_focus_rise }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_people
+		icon = GFX_DKA_people
+		x = 5
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = DKA_focus_rise }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_our_leader
+		icon = GFX_DKA_our_leader
+		x = 4
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = DKA_people }
+		prerequisite = { focus = DKA_party_rat }
+		prerequisite = { focus = DKA_their_hero }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_our_main_enemy
+		icon = GFX_DKA_doctor
+		x = 6
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = DKA_people }
+		prerequisite = { focus = DKA_party_rat }
+		prerequisite = { focus = DKA_their_hero }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_support_doctor
+		icon = GFX_DKA_motherland
+		x = 7
+		y = 4
+		cost = 10
+		
+		prerequisite = { focus = DKA_our_main_enemy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		load_focus_tree = {
+		tree = imhuman_focus_tree_2	
+		keep_completed = yes
+	}	
+		}
+	}
+	focus = {
+		id = DKA_support_government
+		icon = GFX_DKA_flag
+		x = 3
+		y = 4
+		cost = 10
+		
+		prerequisite = { focus = DKA_our_leader }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+}
+
+focus_tree = {
+	id = imhuman_focus_tree_2
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DKA
+		}
+	}
+
+	focus = {
+		id = DKA_test1
+		icon = GFX_DKA_flag
+		x = 3
+		y = 5
+		cost = 10
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		} 
+	}
+}
