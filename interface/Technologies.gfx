@@ -88,6 +88,22 @@ spriteTypes = {
 		name = "GFX_infantry_weapons_improvements_12_medium"
 		texturefile = "gfx/interface/technologies/imp3_4.tga"
 	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_13_medium"
+		texturefile = "gfx/interface/technologies/imp4_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_14_medium"
+		texturefile = "gfx/interface/technologies/imp4_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_15_medium"
+		texturefile = "gfx/interface/technologies/imp4_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_16_medium"
+		texturefile = "gfx/interface/technologies/imp4_4.tga"
+	}
 	
 
     ### HOI IV CRAP###

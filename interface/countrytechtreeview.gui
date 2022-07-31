@@ -310,7 +310,7 @@ guiTypes = {
 					position = { x = 3074 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "4075"
+					text = "4074"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -321,7 +321,7 @@ guiTypes = {
 					position = { x = 3356 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "4080"
+					text = "4076"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -332,7 +332,7 @@ guiTypes = {
 					position = { x = 3638 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "4085"
+					text = "4080"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
