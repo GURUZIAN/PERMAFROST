@@ -1,6 +1,6 @@
 ﻿capital = 21
 
-oob = "WSU_2071"
+oob = "PBL_2071"
 
 set_research_slots = 4
 set_stability = 0.4

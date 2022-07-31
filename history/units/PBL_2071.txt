@@ -1,0 +1,103 @@
+﻿division_template = {
+	name = "Death guard"
+	division_names_group = SPAN_CAV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Elite militia"  	# Cavalry Division
+	division_names_group = SPAN_CAV_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	division= {	# "Pervaya elitnaya divisia imeni Della Konagera"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8971
+		division_template = "Elite militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Pervaya elitnaya divisia imeni Della Konagera"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8137
+		division_template = "Elite militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Pervaya elitnaya divisia imeni Della Konagera"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2216
+		division_template = "Elite militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Pervaya elitnaya divisia imeni Della Konagera"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2540
+		division_template = "Death guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 2540
+		division_template = "Death guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 2540
+		division_template = "Death guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		}
+}
+
+#air_wings = {
+#
+#	302 = {
+#
+#		fighter_equipment_0 =  {
+#			owner = "OST" 
+#			amount = 12
+#		}
+#	}
+#}

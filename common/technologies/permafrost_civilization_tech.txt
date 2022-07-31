@@ -226,12 +226,12 @@ technologies = {
 		
 		enable_building = {
 			building = dockyard
-			level = 20
+			level = 2
 		}
 		
 		enable_building = {
 			building = naval_base
-			level = 10
+			level = 2
 		}
 		
 		research_cost = 1
@@ -688,11 +688,11 @@ technologies = {
 		}
 		enable_building = {
 			building = industrial_complex
-			level = 20
+			level = 3
 		}
 		enable_building = {
 			building = arms_factory
-			level = 20
+			level = 3
 		}
 			
 		research_cost = 1
@@ -1199,7 +1199,7 @@ technologies = {
 		start_year = 2070
 		folder = {
 			name = permafrost_civilization_tech_folder
-			position = { x=10 y=50 }
+			position = { x=10 y=32 }
 		}
 		
 		ai_will_do = {

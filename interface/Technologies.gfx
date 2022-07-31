@@ -14,7 +14,81 @@ spriteTypes = {
 		name = "GFX_after_the_end_tech_medium"
 		texturefile = "gfx/interface/technologies/permafrost_civ_3.dds"
 	}	
-
+	
+	SpriteType = {
+		name = "GFX_infantry_weapons_1_medium"
+		texturefile = "gfx/interface/technologies/infantry1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_3_medium"
+		texturefile = "gfx/interface/technologies/infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_4_medium"
+		texturefile = "gfx/interface/technologies/infantry4.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_5_medium"
+		texturefile = "gfx/interface/technologies/infantry5.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_6_medium"
+		texturefile = "gfx/interface/technologies/infantry6.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_1_medium"
+		texturefile = "gfx/interface/technologies/imp1_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_2_medium"
+		texturefile = "gfx/interface/technologies/imp1_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_3_medium"
+		texturefile = "gfx/interface/technologies/imp1_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_4_medium"
+		texturefile = "gfx/interface/technologies/imp1_4.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_5_medium"
+		texturefile = "gfx/interface/technologies/imp2_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_6_medium"
+		texturefile = "gfx/interface/technologies/imp2_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_7_medium"
+		texturefile = "gfx/interface/technologies/imp2_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_8_medium"
+		texturefile = "gfx/interface/technologies/imp2_4.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_9_medium"
+		texturefile = "gfx/interface/technologies/imp3_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_10_medium"
+		texturefile = "gfx/interface/technologies/imp3_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_11_medium"
+		texturefile = "gfx/interface/technologies/imp3_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_12_medium"
+		texturefile = "gfx/interface/technologies/imp3_4.tga"
+	}
+	
 
     ### HOI IV CRAP###
 	
@@ -484,27 +558,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_engineers_medium"
 		texturefile = "gfx/interface/technologies/engineers.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_support_weapons4_medium"
-		texturefile = "gfx/interface/technologies/support_weapons4.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_support_weapons3_medium"
-		texturefile = "gfx/interface/technologies/support_weapons3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_support_weapons2_medium"
-		texturefile = "gfx/interface/technologies/support_weapons2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_support_weapons_medium"
-		texturefile = "gfx/interface/technologies/support_weapons.dds"
-	}		
+	}			
 	
 	SpriteType = {
 		name = "GFX_night_vision2_medium"

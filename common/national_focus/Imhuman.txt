@@ -9,13 +9,13 @@ focus_tree = {
 			tag = DKA
 		}
 	}
-
+ 
 	focus = {
 		id = DKA_focus_fallen_soldier
 		icon = GFX_DKA_fallen_soldier
 		x = 5
 		y = 0
-		cost = 10
+		cost = 3
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -31,7 +31,7 @@ focus_tree = {
 		icon = GFX_DKA_rise
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = DKA_focus_fallen_soldier }
 
@@ -48,7 +48,7 @@ focus_tree = {
 		icon = GFX_DKA_their_hero
 		x = 3
 		y = 2
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_focus_rise }
 
@@ -65,7 +65,7 @@ focus_tree = {
 		icon = GFX_DKA_party_rat
 		x = 7
 		y = 2
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_focus_rise }
 
@@ -82,7 +82,7 @@ focus_tree = {
 		icon = GFX_DKA_people
 		x = 5
 		y = 2
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_focus_rise }
 
@@ -99,7 +99,7 @@ focus_tree = {
 		icon = GFX_DKA_our_leader
 		x = 4
 		y = 3
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_people }
 		prerequisite = { focus = DKA_party_rat }
@@ -118,7 +118,7 @@ focus_tree = {
 		icon = GFX_DKA_doctor
 		x = 6
 		y = 3
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_people }
 		prerequisite = { focus = DKA_party_rat }
@@ -137,9 +137,10 @@ focus_tree = {
 		icon = GFX_DKA_motherland
 		x = 7
 		y = 4
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_our_main_enemy }
+		mutually_exclusive = { focus = DKA_support_government }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -157,9 +158,10 @@ focus_tree = {
 		icon = GFX_DKA_flag
 		x = 3
 		y = 4
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = DKA_our_leader }
+		mutually_exclusive = { focus = DKA_support_doctor }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

@@ -16,6 +16,21 @@
  DKA_idea_secret_societies:0 "Secret societies"
  DKA_idea_secret_societies_desc:0 "After the coup and the establishment of a new order in bunker 421A, our house, Dr. Oleg, the old government and other supporters of the technocratic order went underground. They planned their plot for a year, carefully preparing for it. And on the first of November 1 year from the new era of mankind or 2070 years from the incident, the unthinkable happened. For a whole month, the rebels tried to seize power, but they failed and we won this fight, but at the cost of many lives. This bloody event is known as the "one-month rebellion". Today, the rebellion is still alive and preparing for the next, more painful blow."
  
+ ###FOCUSES###
+ 
+ DKA_focus_fallen_soldier:0 "Wounded warrior"
+ DKA_focus_fallen_soldier_desc:0 "Hungry, exhausted and lacking the meaning of being - all this is the past. The hardest years are over. We got out of the damned bunker. But it's still too early to drink barjomi. The doctor's supporters are preparing a conspiracy. Much bigger than the first one."
+ DKA_focus_rise:0 "The fate of our old home"
+ DKA_focus_rise_desc:0 "Time to choose. Shall we forget about our past forever, or shall we try something else?"
+ DKA_their_hero:0 "Their Hero"
+ DKA_their_hero_desc:0 "Richard Gordon is a famous Civil War hero. He saved many lives and brought us victory, new territories. He has huge popularity among people. But he is not loyal. He openly criticizes our regime and supports democratic reforms."
+ DKA_party_rat:0 "Accommodative rat"
+ DKA_party_rat_desc:0 "Peter Boston is loyal to our regime. But his skills are questionable. He is not popular among the people, but the party supports him."
+ DKA_people:0 "Our long-suffering people"
+ DKA_people_desc:0 "Our people have suffered too much loss. If we want to enlist his support in the coming war, then we should act now."
+ DKA_our_main_enemy_desc:0"Our victorious country are in great danger. We must unite to crush the last of the Doctor's technocratic larvae."
+ 
+ 
  ###Hoi iv crap###
  fascist_influence:0 "Fascist Influence"
  fascist_influence_desc:0 "Fascist pressure has made fascism very popular, and the country is susceptible to align with other fascists."
