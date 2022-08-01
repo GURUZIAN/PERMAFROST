@@ -23,9 +23,11 @@ ideas = {
 
 			modifier = {
 			drift_defence_factor = -0.40
-			stability_factor = -0.15
-			war_support_factor  = -0.3
-			resistance_growth_on_our_occupied_states = -0.75
+			stability_factor = -0.45
+			war_support_factor  = -0.4
+			resistance_growth_on_our_occupied_states = -0.85
+			training_time_factor = 0.8
+			political_power_factor = -0.4
 			}
 		}
 	}

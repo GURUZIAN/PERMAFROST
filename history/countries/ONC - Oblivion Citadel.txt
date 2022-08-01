@@ -52,3 +52,14 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 2
 }
+
+create_field_marshal = {
+	name = "Ivan Petrikov"
+	picture = "ONC_commander2.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

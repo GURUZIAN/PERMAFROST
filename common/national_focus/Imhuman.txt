@@ -9,7 +9,9 @@ focus_tree = {
 			tag = DKA
 		}
 	}
- 
+	
+	continuous_focus_position = { x = 1 y = 3000 }
+
 	focus = {
 		id = DKA_focus_fallen_soldier
 		icon = GFX_DKA_fallen_soldier
@@ -23,7 +25,7 @@ focus_tree = {
 
 
 		completion_reward = {
-
+	country_event = { id = DKA_events.1 } 
 		}
 	}
 	focus = {
@@ -135,7 +137,7 @@ focus_tree = {
 	focus = {
 		id = DKA_support_doctor
 		icon = GFX_DKA_motherland
-		x = 7
+		x = 8
 		y = 4
 		cost = 3
 		
@@ -156,12 +158,99 @@ focus_tree = {
 	focus = {
 		id = DKA_support_government
 		icon = GFX_DKA_flag
-		x = 3
+		x = 2
 		y = 4
 		cost = 3
 		
 		prerequisite = { focus = DKA_our_leader }
 		mutually_exclusive = { focus = DKA_support_doctor }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_search_for_traitors
+		icon = GFX_DKA_flag
+		x = 0
+		y = 5
+		cost = 3
+		
+		prerequisite = { focus = DKA_support_government }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_prepare_army
+		icon = GFX_DKA_flag
+		x = 2
+		y = 5
+		cost = 3
+		
+		prerequisite = { focus = DKA_support_government }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_special_services_check
+		icon = GFX_DKA_flag
+		x = 4
+		y = 5
+		cost = 3
+		
+		prerequisite = { focus = DKA_support_government }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_what_we_fight_for
+		icon = GFX_DKA_flag
+		x = 2
+		y = 6
+		cost = 4
+		
+		prerequisite = { focus = DKA_special_services_check }
+		prerequisite = { focus = DKA_prepare_army }
+		prerequisite = { focus = DKA_search_for_traitors }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DKA_forward_forward
+		icon = GFX_DKA_flag
+		x = 2
+		y = 7
+		cost = 5
+		
+		prerequisite = { focus = DKA_what_we_fight_for }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

@@ -15,4 +15,11 @@ spriteTypes = {
      textureFile = "gfx/interface/decisions/decision_category_starving.dds"
      noOfFrames = 1
    }
+   
+   ###decisions###
+   spriteType = { 
+     name = "GFX_decision_DKA_loyality"				
+     textureFile = "gfx/interface/decisions/DKA_loyality_bp.dds"
+     noOfFrames = 1
+   }
 }

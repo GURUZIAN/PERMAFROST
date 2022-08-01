@@ -13,8 +13,12 @@
  
  DKA_idea_splendor:0 "Dominance in the region"
  DKA_idea_splendor_desc:0 "We are the most powerful and influential country in this region, and nothing can defeat us, at least for now."
- DKA_idea_secret_societies:0 "Secret societies"
- DKA_idea_secret_societies_desc:0 "After the coup and the establishment of a new order in bunker 421A, our house, Dr. Oleg, the old government and other supporters of the technocratic order went underground. They planned their plot for a year, carefully preparing for it. And on the first of November 1 year from the new era of mankind or 2070 years from the incident, the unthinkable happened. For a whole month, the rebels tried to seize power, but they failed and we won this fight, but at the cost of many lives. This bloody event is known as the "one-month rebellion". Today, the rebellion is still alive and preparing for the next, more painful blow."
+ DKA_idea_secret_societies:0 "The Coming Conspiracy"
+ DKA_idea_secret_societies_desc:0 "After the coup and the establishment of a new order in our state, Dr. Oleg, the old government and other supporters of the technocratic order went underground. They planned their plot for a year, carefully preparing for it. And on the first of November 1 year from the new era of mankind or 2070 years from the incident, the unthinkable happened. For a whole month, the rebels tried to seize power, but they failed and we won this fight, but at the cost of many lives. This bloody event is known as the "one-month rebellion". Today, the rebellion is still alive and preparing for the next, more painful blow."
+ 
+ ###PBL##
+ PBL_total_corruption:0 "Pervasive corruption"
+ PBL_bad_army_reputation:0 " "Army of apes" "
  
  ###FOCUSES###
  

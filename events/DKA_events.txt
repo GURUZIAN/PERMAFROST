@@ -5,31 +5,17 @@
 add_namespace = DKA_events
 
 
-country_event = {
-	id = management_efficiency.1    #colapse
-	title = management_efficiency.1.t	
-	desc = management_efficiency.1.desc	
-	picture = GFX_			
-	
-	hidden = yes
+country_event = { 
+	id = DKA_events.1
+	title = DKA_events.1.t
+	desc = DKA_events.1.desc
+	picture = GFX_report_event_bunker_dka
 
-	trigger = {
-		OR = {
-		has_civil_war = yes
-		has_country_flag = advanced_civilwar
-		}
-		NOT = {
-		has_idea = management_efficiency_collapse
-		}
-	}
+	is_triggered_only = yes
 
-	mean_time_to_happen = { 
-		days = 1
-	}
-
-    immediate = { 
-        add_ideas = {
-    management_efficiency_collapse
-        }
+	option = {
+		name = DKA_events.1.a
+		add_political_power = 5
+		#add_stability = -0.03
 	}
 }

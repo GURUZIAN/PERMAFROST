@@ -43,3 +43,25 @@ create_country_leader = {
 #
 	}
 }
+
+create_field_marshal = {
+	name = "Boris Sovietskiy"
+	picture = "PBL_general_2.dds"
+	traits = { career_officer }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Valera Brulov"
+	picture = "PBL_general_1.dds"
+	traits = { trait_cautious }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+}

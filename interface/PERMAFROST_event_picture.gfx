@@ -15,4 +15,9 @@ spriteTypes = {
      textureFile = "gfx/event_pictures/report_event_starvation_permafrost_3.dds"
      noOfFrames = 1
    }
+   spriteType = { 
+     name = "GFX_report_event_bunker_dka"				
+     textureFile = "gfx/event_pictures/report_event_bunker_dka.dds"
+     noOfFrames = 1
+   }
 }
