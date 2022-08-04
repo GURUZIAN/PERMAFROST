@@ -31,9 +31,10 @@
  DKA_party_rat:0 "Accommodative rat"
  DKA_party_rat_desc:0 "Peter Boston is loyal to our regime. But his skills are questionable. He is not popular among the people, but the party supports him."
  DKA_people:0 "Our long-suffering people"
- DKA_people_desc:0 "Our people have suffered too much loss. If we want to enlist his support in the coming war, then we should act now."
+ DKA_people_desc:0 "Our people have suffered too much loss."
  DKA_our_main_enemy_desc:0"Our victorious country are in great danger. We must unite to crush the last of the Doctor's technocratic larvae."
- 
+ DKA_knyzev:0 "Devil traitor"
+ DKA_knyzev_desc:0 "Once a talented general of the Black Legion. Will he be useful to us in the future confrontation?"
  
  ###Hoi iv crap###
  fascist_influence:0 "Fascist Influence"

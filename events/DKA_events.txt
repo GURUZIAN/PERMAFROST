@@ -19,3 +19,66 @@ country_event = {
 		#add_stability = -0.03
 	}
 }
+
+country_event = {
+	id = DKA_events.2
+	title = DKA_events.2.t
+	desc = DKA_events.2.desc
+	picture = GFX_report_event_bunker
+
+	is_triggered_only = yes
+
+	option = {
+		name = DKA_events.2.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		add_to_variable = { DKA_Richard_Gordon_Loyalty = 20 }
+		add_to_variable = { DKA_Peter_Boston_Loyality = -10 }
+		add_to_variable = { DKA_Party_Loyalty = -5 }
+		#add_stability = -0.03
+	}
+	option = {
+		name = DKA_events.2.b
+		ai_chance = { factor = 1 }
+		add_political_power = 5
+		#if = {
+		#	limit = {
+		#	check_variable = { DKA_Richard_Gordon_Loyalty > 10 }
+		#	}
+		#	add_to_variable = { DKA_Richard_Gordon_Loyalty = -10 }
+		#}
+		add_to_variable = { DKA_Richard_Gordon_Loyalty = -15 }
+		add_to_variable = { DKA_Peter_Boston_Loyality = 10 }
+		add_to_variable = { DKA_Party_Loyalty = 15 }
+	}
+}
+
+country_event = {
+	id = DKA_events.3
+	title = DKA_events.3.t
+	desc = DKA_events.3.desc
+	picture = GFX_report_event_starvation_permafrost_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = DKA_events.3.a
+		add_political_power = 5
+		#add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = DKA_events.4
+	title = DKA_events.4.t
+	desc = DKA_events.4.desc
+	picture = GFX_report_event_starvation_permafrost_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = DKA_events.4.a
+		add_political_power = 5
+		#add_stability = -0.03
+	}
+}

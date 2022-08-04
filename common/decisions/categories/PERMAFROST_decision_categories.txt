@@ -17,7 +17,7 @@ DKA_CivilWar_mechanic_category = {
 	}
 
 	visible = {
-		always = yes
+		has_completed_focus = DKA_support_government
 	}
 
 	visible_when_empty = yes

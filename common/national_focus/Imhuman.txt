@@ -25,15 +25,15 @@ focus_tree = {
 
 
 		completion_reward = {
-	country_event = { id = DKA_events.1 } 
+			country_event = { id = DKA_events.1 } 
 		}
 	}
 	focus = {
-		id = DKA_focus_rise
-		icon = GFX_DKA_rise
+		id = DKA_people
+		icon = GFX_DKA_fallen_soldier
 		x = 5
 		y = 1
-		cost = 5
+		cost = 3
 		
 		prerequisite = { focus = DKA_focus_fallen_soldier }
 
@@ -41,8 +41,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {
 
+		completion_reward = {
+			country_event = { id = DKA_events.4 } 
 		}
 	}
 	focus = {
@@ -52,7 +53,7 @@ focus_tree = {
 		y = 2
 		cost = 3
 		
-		prerequisite = { focus = DKA_focus_rise }
+		prerequisite = { focus = DKA_people }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -69,7 +70,7 @@ focus_tree = {
 		y = 2
 		cost = 3
 		
-		prerequisite = { focus = DKA_focus_rise }
+		prerequisite = { focus = DKA_people }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -80,20 +81,20 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = DKA_people
-		icon = GFX_DKA_people
+		id = DKA_knyzev
+		icon = GFX_DKA_knyzev
 		x = 5
 		y = 2
 		cost = 3
 		
-		prerequisite = { focus = DKA_focus_rise }
+		prerequisite = { focus = DKA_people }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			country_event = { id = DKA_events.3 }
 		}
 	}
 	focus = {
@@ -103,7 +104,7 @@ focus_tree = {
 		y = 3
 		cost = 3
 		
-		prerequisite = { focus = DKA_people }
+		prerequisite = { focus = DKA_knyzev }
 		prerequisite = { focus = DKA_party_rat }
 		prerequisite = { focus = DKA_their_hero }
 
@@ -122,7 +123,7 @@ focus_tree = {
 		y = 3
 		cost = 3
 		
-		prerequisite = { focus = DKA_people }
+		prerequisite = { focus = DKA_knyzev }
 		prerequisite = { focus = DKA_party_rat }
 		prerequisite = { focus = DKA_their_hero }
 
@@ -174,83 +175,30 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = DKA_search_for_traitors
-		icon = GFX_DKA_flag
-		x = 0
-		y = 5
-		cost = 3
-		
-		prerequisite = { focus = DKA_support_government }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = DKA_prepare_army
-		icon = GFX_DKA_flag
+		id = DKA_focus_rise
+		icon = GFX_DKA_rise
 		x = 2
 		y = 5
-		cost = 3
-		
-		prerequisite = { focus = DKA_support_government }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = DKA_special_services_check
-		icon = GFX_DKA_flag
-		x = 4
-		y = 5
-		cost = 3
-		
-		prerequisite = { focus = DKA_support_government }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = DKA_what_we_fight_for
-		icon = GFX_DKA_flag
-		x = 2
-		y = 6
-		cost = 4
-		
-		prerequisite = { focus = DKA_special_services_check }
-		prerequisite = { focus = DKA_prepare_army }
-		prerequisite = { focus = DKA_search_for_traitors }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = DKA_forward_forward
-		icon = GFX_DKA_flag
-		x = 2
-		y = 7
 		cost = 5
 		
-		prerequisite = { focus = DKA_what_we_fight_for }
+		prerequisite = { focus = DKA_support_government }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = DKA_events.2 }
+		}
+	}
+	focus = {
+		id = DKA_secret_societies_raids
+		icon = GFX_DKA_borders
+		x = 2
+		y = 6
+		cost = 3
+		
+		prerequisite = { focus = DKA_focus_rise }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

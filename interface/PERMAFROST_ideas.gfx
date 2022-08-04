@@ -80,4 +80,14 @@ spriteTypes = {
      textureFile = "gfx/ideas/country/DKA/DKA_focus_flag.dds"
      noOfFrames = 1
    }
+   spriteType = { 
+     name = "GFX_DKA_borders"				
+     textureFile = "gfx/ideas/country/DKA/DKA_borders.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_DKA_knyzev"				
+     textureFile = "gfx/ideas/country/DKA/DKA_knyzev.dds"
+     noOfFrames = 1
+   }
 } 

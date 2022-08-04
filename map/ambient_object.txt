@@ -43,3 +43,18 @@ type={
 		}
 	}
 }
+#type={
+#	type="former_peterburg"
+#	use_animation=no
+#	scale=0.500000
+#	always_visible=yes
+#	object={
+#		name="former_peterburg_entity"
+#		position={
+#			2798.670 11.500 1557.240 
+#		}
+#		rotation={
+#			0.000 0.000 0.000 
+#		}
+#	}
+#}
