@@ -414,7 +414,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		
 		instantTextBoxType = {
 			name ="occupied_state_count"
 			position = { x = 80 y = 16 }
