@@ -13,6 +13,14 @@ music = {
 	song = "pfm1"
 	chance = {
 		modifier = {
+			factor = 0.4
+		}		
+	}
+}
+music = {
+	song = "pfm2"
+	chance = {
+		modifier = {
 			factor = 0.5
 		}		
 	}
