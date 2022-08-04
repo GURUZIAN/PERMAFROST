@@ -6,7 +6,7 @@ state={
 		7803 8851 8868 8875 
 	}
 	resources = {
-        aluminum = 4
+        aluminium = 4
 		steel = 25
     }
 	history={
@@ -15,12 +15,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-			hunting_place = 1
 		}
 		owner = FKP
 		add_core_of = FKP
 	}
-	manpower=1764
+	manpower=11764
 	buildings_max_level_factor=1.000
 	state_category = pastoral  
 }

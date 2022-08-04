@@ -14,7 +14,6 @@ state={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 2
-			hydro_farms = 2
 		}
 		owner = DKA
 		add_core_of = DKA

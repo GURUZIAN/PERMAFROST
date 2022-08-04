@@ -30,4 +30,19 @@ spriteTypes = {
      textureFile = "gfx/event_pictures/report_event_richard_gordon.dds"
      noOfFrames = 1
    }
+   spriteType = { 
+     name = "GFX_report_event_boston"				
+     textureFile = "gfx/event_pictures/report_event_boston.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_report_event_boss_of_gym_DKA"				
+     textureFile = "gfx/event_pictures/report_event_boss_of_gym_DKA.dds"
+     noOfFrames = 1
+   }
+   spriteType = { 
+     name = "GFX_report_event_doctor"				
+     textureFile = "gfx/event_pictures/report_event_doctor.dds"
+     noOfFrames = 1
+   }
 }

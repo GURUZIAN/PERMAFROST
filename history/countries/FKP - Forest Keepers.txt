@@ -8,6 +8,7 @@ set_war_support = 0.2
 
 add_ideas = {
 civilization_level_primitive_society
+race_ferines
 }
 
 

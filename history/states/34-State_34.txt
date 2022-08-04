@@ -15,7 +15,6 @@ state={
 				naval_base = 1
 			}
 			infrastructure = 3
-			hydro_farms = 1
 		}
 	}
 	manpower=4236

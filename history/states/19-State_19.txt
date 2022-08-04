@@ -5,7 +5,7 @@ state={
 		2488 4671 7531 8879 
 	}
 	resources = {
-        aluminum = 4
+        aluminium = 4
 		steel = 2
     }
 	history={

@@ -2,50 +2,30 @@ defined_text = {
 	name = GetRICHARDGORDONloyality
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			set_temp_variable = { temp_influence_2 = DKA_Richard_Gordon_Loyalty }
-			set_temp_variable = { temp_influence_3 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Peter_Boston_Loyality }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 30 }
-				check_variable = { temp_influence_2 > 30 }
-				check_variable = { temp_influence_3 > 30 }
-			}
+			check_variable = { DKA_Richard_Gordon_Loyality > 35 }
 		}
-		localization_key = DKA_Richard_Gordon_Loyalty_Overpowering
+		localization_key = DKA_Richard_Gordon_Loyality_Overpowering
 	}
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			set_temp_variable = { temp_influence_2 = DKA_Richard_Gordon_Loyalty }
-			set_temp_variable = { temp_influence_3 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Peter_Boston_Loyality }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 20 }
-				check_variable = { temp_influence_2 > 20 }
-				check_variable = { temp_influence_3 > 20 }
-			}
+			check_variable = { DKA_Richard_Gordon_Loyality > 20 }
 		}
-		localization_key = DKA_Richard_Gordon_Loyalty_Large
+		localization_key = DKA_Richard_Gordon_Loyality_Large
 	}
 	text = {
 		trigger = {
-			check_variable = { DKA_Richard_Gordon_Loyalty > 10 }
+			check_variable = { DKA_Richard_Gordon_Loyality > 10 }
 		}
-		localization_key = DKA_Richard_Gordon_Loyalty_Moderate
+		localization_key = DKA_Richard_Gordon_Loyality_Moderate
 	}
 	text = {
 		trigger = {
-			check_variable = { DKA_Richard_Gordon_Loyalty > 0 }
+			check_variable = { DKA_Richard_Gordon_Loyality > 0 }
 		}
-		localization_key = DKA_Richard_Gordon_Loyalty_Small
+		localization_key = DKA_Richard_Gordon_Loyality_Small
 	}
 	text = {
-		localization_key = DKA_Richard_Gordon_Loyalty_Zero
+		localization_key = DKA_Richard_Gordon_Loyality_Zero
 	}
 }
 
@@ -53,50 +33,30 @@ defined_text = {
 	name = GetPARTYloyality
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Party_Loyalty }
-			set_temp_variable = { temp_influence_2 = DKA_Party_Loyalty }
-			set_temp_variable = { temp_influence_3 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Peter_Boston_Loyality }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 30 }
-				check_variable = { temp_influence_2 > 30 }
-				check_variable = { temp_influence_3 > 30 }
-			}
+			check_variable = { DKA_Party_Loyality > 35 }
 		}
-		localization_key = DKA_Party_Loyalty_Overpowering
+		localization_key = DKA_Party_Loyality_Overpowering
 	}
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Party_Loyalty }
-			set_temp_variable = { temp_influence_2 = DKA_Party_Loyalty }
-			set_temp_variable = { temp_influence_3 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Peter_Boston_Loyality }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 20 }
-				check_variable = { temp_influence_2 > 20 }
-				check_variable = { temp_influence_3 > 20 }
-			}
+			check_variable = { DKA_Party_Loyality > 20 }
 		}
-		localization_key = DKA_Party_Loyalty_Large
+		localization_key = DKA_Party_Loyality_Large
 	}
 	text = {
 		trigger = {
-			check_variable = { DKA_Party_Loyalty > 10 }
+			check_variable = { DKA_Party_Loyality > 15 }
 		}
-		localization_key = DKA_Party_Loyalty_Moderate
+		localization_key = DKA_Party_Loyality_Moderate
 	}
 	text = {
 		trigger = {
-			check_variable = { DKA_Party_Loyalty > 0 }
+			check_variable = { DKA_Party_Loyality > 0 }
 		}
-		localization_key = DKA_Party_Loyalty_Small
+		localization_key = DKA_Party_Loyality_Small
 	}
 	text = {
-		localization_key = DKA_Party_Loyalty_Zero
+		localization_key = DKA_Party_Loyality_Zero
 	}
 }
 
@@ -104,33 +64,13 @@ defined_text = {
 	name = GetPETERBOSTONloyality
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Peter_Boston_Loyality }
-			set_temp_variable = { temp_influence_2 = DKA_Peter_Boston_Loyality }
-			set_temp_variable = { temp_influence_3 = DKA_Peter_Boston_Loyality }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 30 }
-				check_variable = { temp_influence_2 > 30 }
-				check_variable = { temp_influence_3 > 30 }
-			}
+			check_variable = { DKA_Peter_Boston_Loyality > 35 }
 		}
 		localization_key = DKA_Peter_Boston_Loyality_Overpowering
 	}
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Peter_Boston_Loyality }
-			set_temp_variable = { temp_influence_2 = DKA_Peter_Boston_Loyality }
-			set_temp_variable = { temp_influence_3 = DKA_Peter_Boston_Loyality }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 20 }
-				check_variable = { temp_influence_2 > 20 }
-				check_variable = { temp_influence_3 > 20 }
-			}
+			check_variable = { DKA_Peter_Boston_Loyality > 20 }
 		}
 		localization_key = DKA_Peter_Boston_Loyality_Large
 	}
@@ -155,33 +95,13 @@ defined_text = {
 	name = GetKNYZEVloyality
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Boris_Knyzev_Loyality }
-			set_temp_variable = { temp_influence_2 = DKA_Boris_Knyzev_Loyality }
-			set_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Peter_Boston_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 30 }
-				check_variable = { temp_influence_2 > 30 }
-				check_variable = { temp_influence_3 > 30 }
-			}
+			check_variable = { DKA_Boris_Knyzev_Loyality > 35 }
 		}
 		localization_key = DKA_Boris_Knyzev_Loyality_Overpowering
 	}
 	text = {
 		trigger = {
-			set_temp_variable = { temp_influence_1 = DKA_Boris_Knyzev_Loyality }
-			set_temp_variable = { temp_influence_2 = DKA_Boris_Knyzev_Loyality }
-			set_temp_variable = { temp_influence_3 = DKA_Boris_Knyzev_Loyality }
-			subtract_from_temp_variable = { temp_influence_1 = DKA_Richard_Gordon_Loyalty }
-			subtract_from_temp_variable = { temp_influence_2 = DKA_Party_Loyalty }
-			subtract_from_temp_variable = { temp_influence_3 = DKA_Peter_Boston_Loyality }
-			AND = {
-				check_variable = { temp_influence_1 > 20 }
-				check_variable = { temp_influence_2 > 20 }
-				check_variable = { temp_influence_3 > 20 }
-			}
+			check_variable = { DKA_Boris_Knyzev_Loyality > 20 }
 		}
 		localization_key = DKA_Boris_Knyzev_Loyality_Large
 	}

@@ -1,6 +1,6 @@
 	
-	#DKA_Richard_Gordon_Loyalty
-	#DKA_Party_Loyalty
+	#DKA_Richard_Gordon_Loyality
+	#DKA_Party_Loyality
 	#DKA_Peter_Boston_Loyality
 	#DKA_Boris_Knyzev_Loyality
 	
@@ -9,7 +9,7 @@ DKA_CivilWar_mechanic_category = {
 		complete_effect = {
 			set_country_flag = currently_preparing_DKA
 			hidden_effect = {
-				add_to_variable = { DKA_Richard_Gordon_Loyalty = 10 }
+				add_to_variable = { DKA_Richard_Gordon_Loyality = 10 }
 			}
 		}
 		
@@ -28,7 +28,7 @@ DKA_CivilWar_mechanic_category = {
 			factor = 1000
 			modifier = {
 				factor = 0
-				check_variable = { DKA_Richard_Gordon_Loyalty > 25 }
+				check_variable = { DKA_Richard_Gordon_Loyality > 25 }
 			}
 		}
 	}
@@ -36,7 +36,7 @@ DKA_CivilWar_mechanic_category = {
 		complete_effect = {
 			set_country_flag = currently_preparing_DKA
 			hidden_effect = {
-				add_to_variable = { DKA_Party_Loyalty = 10 }
+				add_to_variable = { DKA_Party_Loyality = 10 }
 			}
 		}
 		
@@ -55,7 +55,7 @@ DKA_CivilWar_mechanic_category = {
 			factor = 1000
 			modifier = {
 				factor = 0
-				check_variable = { DKA_Party_Loyalty > 25 }
+				check_variable = { DKA_Party_Loyality > 25 }
 			}
 		}
 	}
@@ -134,7 +134,7 @@ DKA_CivilWar_mechanic_category = {
 	#	timeout_effect = {
 	#
 	#		hidden_effect = {
-	#			add_to_variable = { DKA_Richard_Gordon_Loyalty = 5 }
+	#			add_to_variable = { DKA_Richard_Gordon_Loyality = 5 }
 	#		}
 	#	}
 	#}

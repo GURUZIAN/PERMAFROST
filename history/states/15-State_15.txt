@@ -5,7 +5,7 @@ state={
 		8999 
 	}
 	resources = {
-        aluminum = 1
+        aluminium = 1
 		steel = 7
     }
 	history={
@@ -20,7 +20,6 @@ state={
 			}
 			infrastructure = 6
 			industrial_complex = 2
-			hydro_farms = 1
 		}
 	}
 	manpower=9375
