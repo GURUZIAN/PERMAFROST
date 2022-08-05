@@ -127,6 +127,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_1.tga"
 	}
 	SpriteType = {
+		name = "GFX_permafrost_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/motorized_equipment_1.dds"
+	}
+	SpriteType = {
 		name = "GFX_permafrost_motorised_improvements_2_medium"
 		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_2.tga"
 	}

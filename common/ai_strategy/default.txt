@@ -147,6 +147,12 @@ default_unit_production = {
 		id = mobile
 		value = 30
 	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = 35
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -321,7 +327,7 @@ default_cavalry_production = {
 		ai_strategy = {
 		type = template_prio
 		id = cavalry
-		value = 2
+		value = 5
 	}
 }
 
@@ -346,12 +352,6 @@ default_mobile_production = {
 DEFAULT_template_design = {
 	enable = {
 		always = yes
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = 25
 	}
 
 	ai_strategy = {
