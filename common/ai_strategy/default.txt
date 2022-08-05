@@ -133,15 +133,19 @@
 #	priority = 100 # ai will prefer state of the highest prio strategy
 # }
 
+
 default_unit_production = {
 	enable = {
+		#NOT = {
+		#	has_country_flag = TNO_DIVISIONS_CAPPED
+		#}
 		always = yes
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
-		id = paratroopers
-		value = 0
+		id = mobile
+		value = 30
 	}
 
 	ai_strategy = {
@@ -153,58 +157,57 @@ default_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
 		value = 2
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = infantry
+		id = armor
 		value = 30
 	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 40
+	}
 	
+	ai_strategy = {
+		type = role_ratio
+		id = militia
+		value = 40
+	}
+
 	#Air unit factors
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 80
+		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 5
+		value = 10
 	}
-	
+
 	ai_strategy = {
 		type = unit_ratio
 		id = tactical_bomber
 		value = 5
 	}
-	
+
 	ai_strategy = {
 		type = unit_ratio
 		id = strategic_bomber
 		value = 5
 	}
-	
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = 5
-	}
-	
-	
+
 	# Naval unit factors
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 10
+		value = 20
 	}
 
 	ai_strategy = {
@@ -216,7 +219,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 40
+		value = 30
 	}
 
 	ai_strategy = {
@@ -224,19 +227,31 @@ default_unit_production = {
 		id = convoy
 		value = 15
 	}
-	
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
 		value = 35
 	}
-	
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
 		value = 40
 	}
-	
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 30
+	}
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
@@ -244,11 +259,9 @@ default_unit_production = {
 	}
 }
 
-default_role_ratios = {
+default_role_ratios_no_mtg = {
 	enable = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
+		always = yes
 	}
 
 	ai_strategy = {
@@ -276,107 +289,6 @@ default_role_ratios = {
 	}
 }
 
-convoy_voy_voy_voy = {
-	enable = {
-		has_dlc = "Man the Guns"
-		convoy_threat > 0.2
-	}
-	abort = {
-		convoy_threat < 0.2
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_light
-		value = -20
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_escort
-		value = 25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -10
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = convoy
-		value = 25
-	}
-}
-
-ill_show_you_mine = {
-	enable = {
-		has_dlc = "Man the Guns"
-		mine_threat > 0.2
-	}
-	abort = {
-		mine_threat < 0.2
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_heavy
-		value = -20
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
-	}
-}
-
-ill_show_you_mine_2 = {
-	enable = {
-		has_dlc = "Man the Guns"
-		mine_threat > 0.5
-	}
-	abort = {
-		mine_threat < 0.5
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_light
-		value = -20
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
-	}
-}
-
 default_pp_spend_amount = {
 	enable = {
 		always = yes
@@ -395,420 +307,68 @@ default_pp_spend_amount = {
 	}
 }
 
-default_paratroopers_production = {
+default_cavalry_production = {
 	enable = {
-		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+		ai_wants_divisions > 19
+		has_tech = permafrost_motorised_improvements
 	}
 	abort = {
-		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
+		OR = {
+			ai_wants_divisions < 20
+		}
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
-}
-
-default_milia_production = {
-	enable = {
-		ai_wants_divisions >  2
-	}
-	abort = {
-		ai_wants_divisions < 2 
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = militia
-		value = 80
-	}
-}
-
-default_garrison_production = {
-	enable = {
-		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
-		is_major = yes
-	}
-	abort = {
-		ai_wants_divisions < 13 #Massively decreasing the amount of garrison and suppression the AI wants
-		is_major = no
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = 5
-	}
-	
-	# Old garrison system against resistance
-	# ai_strategy = {
-	# 	type = role_ratio
-	# 	id = suppression
-	# 	value = 2
-	# }
-}
-
-default_mountaineers_production = {
-	enable = {
-		ai_wants_divisions > 11 #Decreasing the amount of mountaineers the AI wants
-	}
-	abort = {
-		ai_wants_divisions < 12 #Decreasing the amount of mountaineers the AI wants
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 3
-	}
-}
-
-default_marines_production = {
-	enable = {
-		ai_wants_divisions > 49
-	}
-	abort = {
-		ai_wants_divisions < 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = marines
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 0
-	}
-}
-
-#default_mobile_production = {
-#	enable = {
-#		ai_wants_divisions > 11
-#		has_tech = motorised_infantry
-#	}
-#	abort = {
-#		ai_wants_divisions < 12
-#	}
-#
-#	ai_strategy = {
-#		type = role_ratio
-#		id = mobile
-#		value = 2
-#	}
-#}
-
-default_armored_production = {
-	enable = {
-		ai_wants_divisions > 49
-	}
-	abort = {
-		ai_wants_divisions < 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
+		ai_strategy = {
+		type = template_prio
+		id = cavalry
 		value = 2
 	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 0
-	}
 }
 
-highered_armored_production = {
+default_mobile_production = {
 	enable = {
-		num_of_military_factories > 69
+		ai_wants_divisions > 19
+		has_tech = permafrost_motorised_infantry
 	}
 	abort = {
-		num_of_military_factories < 70
+		OR = {
+			ai_wants_divisions < 20
+		}
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = armor
-		value = 5
-	}
-}
-
-default_area_priority = {
-	ai_strategy = {
-		type = area_priority
-		id = europe
-		value = 100
-	}
-}
-
-default_stockpile_management = {
-	enable = {
-		num_divisions > 150
-	}
-
-	abort = {
-		num_divisions < 130
-	}
-
-	ai_strategy = {
-		type = equipment_stockpile_surplus_ratio
-		value = 35 # double base stockpile #from 25 to 35
+		id = mobile
+		value = 2
 	}
 }
 
 DEFAULT_template_design = {
-
-	ai_strategy = {
-		type = template_prio
-		id = mechanized
-		value = 10
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = cavalry
-		value = -100
-	}
-	
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 10
+		value = 25
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 20
-	}
-	
-	ai_strategy = {
-		type = template_prio
-		id = modern_armor
-		value = 50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-	
 	ai_strategy = {
 		type = template_prio
 		id = infantry
-		value = 10
+		value = 100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = militia
-		value = 10
-	}
-}
-
-save_admiral_pp_for_later = {
-	enable = {
-		has_war = no
-		threat < 0.3
-		has_political_power < 200		
-	}
-	abort = {
-		OR = {
-			has_war = yes	
-			threat > 0.3
-			has_political_power > 200
-		}
-	}
-
-	ai_strategy = { # dont burn PP on admirals (can still get free ones)
-		type = pp_spend_priority
-		id = admiral
-		value = -100
-	}
-}
-
-do_not_waste_pp_if_saving_for_manpower_laws = {
-
-	enable = {
-		manpower_per_military_factory < 500
-		has_war = yes
-	}
-	abort = {
-		OR = {
-			manpower_per_military_factory > 500
-			has_war = no
-		}
+		value = 125
 	}
 
 	ai_strategy = {
-		type = pp_spend_priority
-		id = relation
-		value = -9999
-	}
-
-	ai_strategy = {
-		type = pp_spend_priority
-		id = guarantee
-		value = -9999
-	}
-}
-
-build_intelligence_agency_as_major = {
-	enable = {
-		is_major = yes
-		has_war = yes
-	}
-
-	ai_strategy = {
-		type = intelligence_agency_usable_factories
-		value = 5
-	}
-
-}
-
-build_intelligence_agency = {
-	enable = {
-		has_war = no
-		num_of_civilian_factories > 6
-	}
-	abort = {
-		OR = {
-			has_war = yes
-			num_of_civilian_factories < 6
-		}
-	}
-
-	ai_strategy = {
-		type = intelligence_agency_usable_factories
-		value = 5
-	}
-
-}
-
-upgrade_intelligence_agency = {
-	enable = {
-		num_of_civilian_factories > 50
-	}
-	abort = {
-		OR = {
-			num_of_civilian_factories < 40
-		}
-	}
-
-	ai_strategy = {
-		type = intelligence_agency_usable_factories
-		value = 5
-	}
-}
-
-upgrade_intelligence_agency_as_spy_master = {
-	enable = {
-		is_spymaster = yes
-		OR = {
-			has_war = no
-			num_of_civilian_factories > 50
-		}
-	}
-	abort = {
-		is_spymaster = no
-		num_of_civilian_factories < 40
-	}
-
-	ai_strategy = {
-		type = intelligence_agency_usable_factories
-		value = 10
-	}
-}
-
-addintelligence_agency_normal_upgrade_prio = {
-	enable = {
-		always = yes
-	}
-
-	ai_strategy = {
-		type = intelligence_agency_branch_desire_factor
-		id = branch_intelligence
-		value = 1000
-	}
-	ai_strategy = {
-		type = intelligence_agency_branch_desire_factor
-		id = branch_defense
-		value = 1000
-	}
-	ai_strategy = {
-		type = intelligence_agency_branch_desire_factor
-		id = branch_operation
-		value = 500
-	}
-	ai_strategy = {
-		type = intelligence_agency_branch_desire_factor
-		id = branch_operative
-		value = 100
-	}
-	ai_strategy = {
-		type = intelligence_agency_branch_desire_factor
-		id = branch_crypto
-		value = 2000
-	}	
-}
-
-ask_foreign_manpower_as_major = {
-	enable = {
-		is_major = yes
-		garrison_manpower_need > 200000
-	}
-	
-	abort = {
-		garrison_manpower_need < 100000
-	}
-
-	ai_strategy = {
-		type = asking_foreign_garrison
-		value = 100
-		# id = ITA # id is optionnal. If it is filled, the value will just apply for this country. If not, the value will apply for all countries.
-	}
-}
-
-more_upgrades_as_spymaster = {
-
-	enable = {
-		is_spymaster = yes
-	}
-	
-	abort = {
-		is_spymaster = no
-	}
-
-	ai_strategy = {
-		type = agency_ai_base_num_factories_factor
-		value = -50    # -50% on the define
-	}
-
-	ai_strategy = {
-		type = agency_ai_per_upgrade_factories_factor
-		value = -25    # -25% on the define
-	}
-}
-
-
-put_garrisons_on_high_prio = {
-	enable = {
-		always = yes
-	}
-	
-	ai_strategy = {
-		type = garrison_reinforcement_priority
-		value = 100 # positive is high prio, negative is low prio
+		type = template_prio
+		id = marines
+		value = 25
 	}
 }

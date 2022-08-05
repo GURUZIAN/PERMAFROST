@@ -105,6 +105,48 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/imp4_4.tga"
 	}
 	
+	SpriteType = {
+		name = "GFX_night_vision_permafrost_medium"
+		texturefile = "gfx/interface/technologies/night_vision_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_night_vision_permafrost2_medium"
+		texturefile = "gfx/interface/technologies/night_vision_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_night_vision_permafrost3_medium"
+		texturefile = "gfx/interface/technologies/night_vision_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_night_vision_permafrost4_medium"
+		texturefile = "gfx/interface/technologies/night_vision_4.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_permafrost_motorised_improvements_medium"
+		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_permafrost_motorised_improvements_2_medium"
+		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_permafrost_motorised_improvements_3_medium"
+		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_permafrost_motorised_improvements_4_medium"
+		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_4.tga"
+	}
+	SpriteType = {
+		name = "GFX_permafrost_motorised_improvements_5_medium"
+		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_5.tga"
+	}
+	SpriteType = {
+		name = "GFX_permafrost_motorised_improvements_6_medium"
+		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_6.tga"
+	}
+	
 
     ### HOI IV CRAP###
 	

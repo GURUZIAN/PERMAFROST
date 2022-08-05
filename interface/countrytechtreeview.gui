@@ -200,6 +200,20 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			
+			gridboxtype = {
+				name = "night_vision_permafrost_tree"
+				position =  { x = 2 y = 250 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			
+			gridboxtype = {
+				name = "permafrost_motorised_improvements_tree"
+				position =  { x = 10 y = 200 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			containerWindowType = {
 				name = "techtree_stripes"
