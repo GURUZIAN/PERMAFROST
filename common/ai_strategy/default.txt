@@ -168,12 +168,6 @@ default_unit_production = {
 		value = 30
 	}
 	
-	ai_strategy = {
-		type = role_ratio
-		id = militia
-		value = 80
-	}
-	
 	#Air unit factors
 	ai_strategy = {
 		type = unit_ratio
@@ -416,6 +410,21 @@ default_paratroopers_production = {
 	}
 }
 
+default_milia_production = {
+	enable = {
+		ai_wants_divisions >  2
+	}
+	abort = {
+		ai_wants_divisions < 2 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = militia
+		value = 80
+	}
+}
+
 default_garrison_production = {
 	enable = {
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
@@ -551,34 +560,6 @@ default_stockpile_management = {
 	}
 }
 
-
-dont_build_capitals_if_on_treaty = {
-	enable = {
-		has_naval_treaty_trigger = yes
-	}
-
-	abort = {
-		not = { has_naval_treaty_trigger = yes }
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -2		 #1 to 2
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bb
-		value = -100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bc
-		value = -100
-	}
-}
-
 DEFAULT_template_design = {
 
 	ai_strategy = {
@@ -686,10 +667,7 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 build_intelligence_agency_as_major = {
 	enable = {
 		is_major = yes
-		OR = {
-			has_war = yes
-			date > 1938.1.1
-		}
+		has_war = yes
 	}
 
 	ai_strategy = {
@@ -702,12 +680,12 @@ build_intelligence_agency_as_major = {
 build_intelligence_agency = {
 	enable = {
 		has_war = no
-		num_of_civilian_factories > 25
+		num_of_civilian_factories > 6
 	}
 	abort = {
 		OR = {
 			has_war = yes
-			num_of_civilian_factories < 25
+			num_of_civilian_factories < 6
 		}
 	}
 

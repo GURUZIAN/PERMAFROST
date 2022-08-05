@@ -9,16 +9,6 @@ armor_generic = {
 	
 	upgrade_prio = {
 		factor = 2.17
-
-		modifier = {
-			factor = 7
-			has_tech = basic_medium_tank
-		}
-		
-		modifier = {
-			factor = 2
-			has_tech = main_battle_tank
-		}
 	}
 	
 	match_to_count = 0.5
@@ -217,11 +207,6 @@ armor_generic = {
 	
 		upgrade_prio = {
 			factor = 2
-
-			modifier = {
-				factor = 4
-				has_tech = basic_medium_tank
-			}
 		}
 		
 		target_width = 20.0
@@ -310,10 +295,6 @@ armor_generic = {
 		upgrade_prio = {
 			factor = 2
 
-			modifier = {
-				factor = 4
-				has_tech = armored_car1
-			}
 		}
 		
 		target_width = 20.0
@@ -676,6 +657,7 @@ suppression_generic = {
 		
 		allowed_types = {
 			cavalry
+			militia
 			military_police
 		}
 	}
@@ -692,6 +674,20 @@ infantry_generic = {
 
 		modifier = {
 			factor = 5
+		}
+	}
+	
+	militia_generic = {
+
+	roles = {
+		militia
+	}
+	
+	upgrade_prio = {
+		factor = 1
+
+		modifier = {
+			factor = 3
 		}
 	}
 
@@ -906,13 +902,6 @@ mountaineers_generic = {
 	
 	upgrade_prio = {
 		factor = 2
-
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = tech_mountaineers
-			}
-		}
 	}
 	
 	match_to_count = 0.45
@@ -1006,13 +995,6 @@ marines_generic = {
 	
 	upgrade_prio = {
 		factor = 2
-
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = marines
-			}
-		}
 	}
 	
 	match_to_count = 0.45
@@ -1095,13 +1077,6 @@ marines_generic = {
 		upgrade_prio = {
 			factor = 2
 
-			modifier = {
-				factor = 0
-				NOT = {
-					has_tech = amphibious_tank
-					has_tech = amphibious_mechanized_infantry
-				}
-			}
 			modifier = {
 				is_major = no
 				factor = 0
@@ -1187,13 +1162,6 @@ paratrooper_generic = {
 	
 	upgrade_prio = {
 		factor = 2
-
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = paratroopers
-			}
-		}
 	}
 	
 	match_to_count = 0.45
