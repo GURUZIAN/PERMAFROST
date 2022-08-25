@@ -1,12 +1,12 @@
 technologies = {
 	
-	hydrogen_unsing = {
+	hydrogen_using = {
 		
 		research_cost = 1
 		start_year = 4000
 		folder = {
 			name = permafrost_industry_folder
-			position = { x=14 y=1 }
+			position = { x=1 y=1 }
 		}
 		
 		ai_will_do = {
