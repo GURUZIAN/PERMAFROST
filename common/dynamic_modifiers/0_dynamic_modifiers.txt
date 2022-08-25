@@ -26,42 +26,6 @@
 
 ###PERMAFROST###
 
-consumer_1 = {
-	icon = GFX_modifiers_consumption
-	
-	state_resource_cost_nutrition = +1
-}
-
-consumer_2 = {
-	icon = GFX_modifiers_consumption
-	
-	state_resource_cost_nutrition = +2
-}
-
-consumer_3 = {
-	icon = GFX_modifiers_consumption
-	
-	state_resource_cost_nutrition = +3
-}
-
-consumer_4 = {
-	icon = GFX_modifiers_consumption
-	
-	state_resource_cost_nutrition = +4
-}
-
-consumer_5 = {
-	icon = GFX_modifiers_consumption
-	
-	state_resource_cost_nutrition = +8
-}
-
-consumer_6 = {
-	icon = GFX_modifiers_consumption
-	
-	state_resource_cost_nutrition = +12
-}
-
 ###OTHER CRAP###
 
 sabotaged_resources = {

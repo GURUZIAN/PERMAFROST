@@ -150,7 +150,50 @@ spriteTypes = {
 		name = "GFX_permafrost_motorised_improvements_6_medium"
 		texturefile = "gfx/interface/technologies/permafrost_motorised_improvements_6.tga"
 	}
-	
+	SpriteType = {
+		name = "GFX_society_tech_medium"
+		texturefile = "gfx/interface/technologies/A2.tga"
+	}
+	SpriteType = {
+		name = "GFX_traditional_soc_tech_medium"
+		texturefile = "gfx/interface/technologies/A1.tga"
+	}
+	SpriteType = {
+		name = "GFX_weapons_tech_medium"
+		texturefile = "gfx/interface/technologies/A3.tga"
+	}
+	SpriteType = {
+		name = "GFX_develop_production_medium"
+		texturefile = "gfx/interface/technologies/A4.tga"
+	}
+	SpriteType = {
+		name = "GFX_early_tech_soc_medium"
+		texturefile = "gfx/interface/technologies/A5.tga"
+	}
+	SpriteType = {
+		name = "GFX_farming_medium"
+		texturefile = "gfx/interface/technologies/A8.tga"
+	}
+	SpriteType = {
+		name = "GFX_horses_tech_medium"
+		texturefile = "gfx/interface/technologies/A7.tga"
+	}
+	SpriteType = {
+		name = "GFX_weapons_tech_2_medium"
+		texturefile = "gfx/interface/technologies/A9.tga"
+	}
+	SpriteType = {
+		name = "GFX_weapons_tech_3_medium"
+		texturefile = "gfx/interface/technologies/A11.tga"
+	}
+	SpriteType = {
+		name = "GFX_stone_cut_medium"
+		texturefile = "gfx/interface/technologies/A6.tga"
+	}
+	SpriteType = {
+		name = "GFX_develop_production_2_medium"
+		texturefile = "gfx/interface/technologies/A10.tga"
+	}
 
     ### HOI IV CRAP###
 	

@@ -1,0 +1,51 @@
+
+
+add_namespace = civ_ev
+
+
+country_event = {
+	id = civ_ev.1   
+	title = civ_ev.1.t	
+	desc = civ_ev.1.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		has_tech = traditional_soc_tech
+		has_idea = civilization_level_primitive_society
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+
+    immediate = { 
+        add_ideas = {
+			civilization_level_traditional_society
+        }
+	}
+}
+country_event = {
+	id = civ_ev.2    
+	title = civ_ev.2.t	
+	desc = civ_ev.2.desc	
+	picture = GFX_			
+	
+	hidden = yes
+
+	trigger = {
+		has_tech = early_tech_soc
+		has_idea = civilization_level_traditional_society
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+    immediate = { 
+        add_ideas = {
+			civilization_level_early_technogenic_society
+        }
+	}
+}

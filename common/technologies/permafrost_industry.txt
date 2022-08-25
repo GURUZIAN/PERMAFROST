@@ -1,0 +1,21 @@
+technologies = {
+	
+	hydrogen_unsing = {
+		
+		research_cost = 1
+		start_year = 4000
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=14 y=1 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+}

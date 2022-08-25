@@ -425,6 +425,69 @@ guiTypes = {
 				}					
 			}
 		}
+		
+		containerWindowType = {
+			name = "permafrost_industry_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+			
+			iconType = {
+					name ="permafrost_industry_techtree_bg"
+					spriteType = "GFX_permafrost_civilization_techtree_bg"
+					position = { x=0 y=0 }
+					alwaystransparent = yes
+				}
+	
+			gridboxtype = {
+				name = "hydrogen_unsing"
+				position = { x = 20 y = 0 }
+				size = { width = 520 height = 800 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			containerWindowType = {
+				name = "PERMAFROST_ind_CTT_year_right"
+				position = { x=100 y=40 }
+				size = { width = 130 height = 100% }
+				orientation = upper_left
+
+				instantTextBoxType = {
+					name = "bpermp"
+					position = { x = 0 y = 320 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "Human past"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "permper"
+					position = { x = 0 y = 1000 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 32}
+					text = "Permafrost period"
+					maxWidth = 200
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}					
+			}					
+		}
 
 		containerWindowType = {
 			name = "folder_tabs"
@@ -450,6 +513,13 @@ guiTypes = {
 			buttonType = {
 				name = "permafrost_civilization_tech_folder_tab"
 				position = { x = 111 y = 0 }
+				quadTextureSprite = "GFX_permafrost_civilization_tech_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "permafrost_industry_folder_tab"
+				position = { x = 200 y = 0 }
 				quadTextureSprite = "GFX_permafrost_civilization_tech_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -847,6 +917,42 @@ guiTypes = {
 #######PERMAFROST###
 	containerWindowType = {
 		name = "techtree_permafrost_civilization_tech_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 204 height = 72 }
+		clipping = no
+
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "bonus_icon"
+			position = { x=-1 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+	}
+	containerWindowType = {
+		name = "techtree_industry_folder_small_item"
 		position = { x=0 y=0 }
 		size = { width = 204 height = 72 }
 		clipping = no

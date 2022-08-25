@@ -24,7 +24,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		days = 1
+		days = 10
 	}
 
     immediate = { 
@@ -54,7 +54,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		days = 1 
+		days = 10
 	}
 
     immediate = { 
@@ -85,7 +85,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		days = 1 
+		days = 10
 	}
 
     immediate = { 
@@ -116,7 +116,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		days = 1 
+		days = 10
 	}
 
     immediate = { 
@@ -146,102 +146,12 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		days = 1 
+		days = 10
 	}
 
     immediate = { 
         add_ideas = {
     management_efficiency_absolute
         }
-	}
-}
-
-###test things###
-
-country_event = {
-	id = management_efficiency.6  
-	title = management_efficiency.6.t	
-	desc = management_efficiency.6.desc	
-	picture = GFX_			
-	
-	hidden = no
-
-	mean_time_to_happen = { 
-		days = 1 
-	}
-	
-	is_triggered_only = yes
-
-	option = {
-		name = management_efficiency.6.a
-			ROOT = {
-				if = {
-					limit = {
-					    all_state = {					
-						    state_population > 32000
-					}
-				}
-				country_event = {
-                id = management_efficiency.7
-                days = 1
-                }
-			}
-			    else_if = {
-					limit = {
-					    all_state = {											
-						    state_population > 1000
-					}
-					}
-					country_event = {
-                    id = management_efficiency.6
-                    days = 1
-                }
-			}
-		}
-	}
-} 
-
-country_event = {
-	id = management_efficiency.7 
-	title = management_efficiency.7.t	
-	desc = management_efficiency.7.desc	
-	picture = GFX_			
-	
-	hidden = no
-
-	mean_time_to_happen = { 
-		days = 1 
-	}
-	
-	is_triggered_only = yes
-
-	option = {
-		name = management_efficiency.7.a
-			ROOT = {
-				if = {
-					limit = {
-					    all_state = {    
-						    state_population > 2000
-					}
-				}
-				country_event = {
-                id = management_efficiency.7
-                days = 1
-                }
-			}
-			    else_if = {
-					limit = {
-					    all_state = {
-                            NOT = {						
-						    state_population > 2000
-						}
-					}
-					}
-					country_event = {
-                    id = management_efficiency.6
-                    days = 1
-                }
-			}
-		}
 	}
 }
