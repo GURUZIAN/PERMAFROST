@@ -161,3 +161,54 @@ country_event = {
 		set_country_flag = governments_side_dka 
 	}
 }
+
+country_event = {   #start inf varibles
+	id = DKA_events.10    
+	title = DKA_events.10.t	
+	desc = DKA_events.10.desc	
+	picture = GFX_			
+	
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DKA
+	}
+
+	mean_time_to_happen = { 
+		days = 5
+	}
+
+    immediate = { 
+        add_ideas = {
+			add_to_variable = { DKA_Peter_Boston_Loyality = 35 }
+			add_to_variable = { DKA_Party_Loyality = 25 }
+			add_to_variable = { DKA_Boris_Knyzev_Loyality = 15 }
+        }
+	}
+}
+
+#civilwar
+
+country_event = {
+	id = DKA_events.11
+	title = DKA_events.11.t	
+	desc = DKA_events.11.desc	
+	picture = GFX_			
+	
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DKA
+		date > 4079.03.03
+	}
+
+	mean_time_to_happen = { 
+		days = 5
+	}
+
+    immediate = { 
+        
+	}
+}

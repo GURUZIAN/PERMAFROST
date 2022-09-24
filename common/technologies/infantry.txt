@@ -894,4 +894,4 @@ technologies = {
 			factor = 50
 		}
 	}
-}
+}s

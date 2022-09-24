@@ -9,7 +9,7 @@ DKA_CivilWar_mechanic_category = {
 		complete_effect = {
 			set_country_flag = currently_preparing_DKA
 			hidden_effect = {
-				add_to_variable = { DKA_Richard_Gordon_Loyality = 10 }
+				add_to_variable = { DKA_Richard_Gordon_Loyality = 5 }
 			}
 		}
 		
@@ -25,7 +25,7 @@ DKA_CivilWar_mechanic_category = {
 		days_remove = 7
 
 		ai_will_do = {
-			factor = 1000
+			factor = 500
 			modifier = {
 				factor = 0
 				check_variable = { DKA_Richard_Gordon_Loyality > 25 }
@@ -36,7 +36,7 @@ DKA_CivilWar_mechanic_category = {
 		complete_effect = {
 			set_country_flag = currently_preparing_DKA
 			hidden_effect = {
-				add_to_variable = { DKA_Party_Loyality = 10 }
+				add_to_variable = { DKA_Party_Loyality = 5 }
 			}
 		}
 		
@@ -52,7 +52,7 @@ DKA_CivilWar_mechanic_category = {
 		days_remove = 7
 
 		ai_will_do = {
-			factor = 1000
+			factor = 500
 			modifier = {
 				factor = 0
 				check_variable = { DKA_Party_Loyality > 25 }
@@ -63,7 +63,7 @@ DKA_CivilWar_mechanic_category = {
 		complete_effect = {
 			set_country_flag = currently_preparing_DKA
 			hidden_effect = {
-				add_to_variable = { DKA_Peter_Boston_Loyality = 10 }
+				add_to_variable = { DKA_Peter_Boston_Loyality = 5 }
 			}
 		}
 		
@@ -79,7 +79,7 @@ DKA_CivilWar_mechanic_category = {
 		days_remove = 7
 
 		ai_will_do = {
-			factor = 1000
+			factor = 500
 			modifier = {
 				factor = 0
 				check_variable = { DKA_Peter_Boston_Loyality > 25 }
@@ -90,7 +90,7 @@ DKA_CivilWar_mechanic_category = {
 		complete_effect = {
 			set_country_flag = currently_preparing_DKA
 			hidden_effect = {
-				add_to_variable = { DKA_Boris_Knyzev_Loyality = 10 }
+				add_to_variable = { DKA_Boris_Knyzev_Loyality = 5 }
 			}
 		}
 		
@@ -106,7 +106,7 @@ DKA_CivilWar_mechanic_category = {
 		days_remove = 7
 
 		ai_will_do = {
-			factor = 1000
+			factor = 500
 			modifier = {
 				factor = 0
 				check_variable = { DKA_Boris_Knyzev_Loyality > 25 }
@@ -129,7 +129,7 @@ DKA_CivilWar_mechanic_category = {
 	#	is_good = yes
 	#
 	#	days_mission_timeout = 2 
-	#	days_remove = 10
+	#	days_remove = 5
 	#
 	#	timeout_effect = {
 	#

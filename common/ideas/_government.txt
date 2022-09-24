@@ -435,6 +435,7 @@ ideas = {
 				has_government = tribal
 				has_government = technocratic
 				has_government = democratic
+				has_government = neutrality
 				has_idea = political_system_democracy
 				has_idea = political_system_communes
 				has_idea = political_system_autocracy
@@ -476,6 +477,8 @@ ideas = {
 			NOT = {
 				has_government = tribal
 				has_government = technocratic
+				has_government = neutrality
+				has_government = democratic
 				has_idea = political_system_democracy
 				has_idea = political_system_communes
 				}

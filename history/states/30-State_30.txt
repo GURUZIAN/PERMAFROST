@@ -1,0 +1,27 @@
+state={
+	id=30
+	name="STATE_30"
+	provinces={
+		4575 5777 8995 9000 9027 
+	}
+	resources = {
+		steel = 2
+    }
+	history={
+		victory_points = {
+			9027 5
+		}
+		owner = PBL
+		add_core_of = PBL
+		buildings = {
+			8999 = {
+				naval_base = 2
+			}
+			infrastructure = 9
+			industrial_complex = 3
+		}
+	}
+	manpower=11235
+	buildings_max_level_factor=1.000
+	state_category = city
+}

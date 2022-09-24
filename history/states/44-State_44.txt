@@ -14,7 +14,6 @@ state={
 			infrastructure = 10
 			industrial_complex = 5
 			arms_factory = 5
-			advanced_hydro_farms = 2
 		}
 	}
 	manpower=30142

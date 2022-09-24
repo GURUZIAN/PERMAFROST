@@ -1,12 +1,19 @@
 technologies = {
 	
-	hydrogen_using = {
+	industry_permafrost_tools_1 = {
+		
+		production_factory_max_efficiency_factor = 0.05
 		
 		research_cost = 1
-		start_year = 4000
+		start_year = 4071
 		folder = {
 			name = permafrost_industry_folder
-			position = { x=1 y=1 }
+			position = { x=5 y=1 }
+		}
+		
+		path = {
+			leads_to_tech = industry_permafrost_tools_2
+			research_cost_coeff = 1
 		}
 		
 		ai_will_do = {
@@ -18,4 +25,485 @@ technologies = {
 		}
 	}
 	
+	industry_permafrost_tools_2 = {
+		
+		production_factory_max_efficiency_factor = 0.05
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=5 y=3 }
+		}
+		
+		path = {
+			leads_to_tech = industry_permafrost_tools_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = industry_permafrost_standartization_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = permafrost_excavation_1
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			primitive_tech
+		}
+	}
+	
+	permafrost_excavation_1 = {
+	
+	    local_resources_factor = 0.05
+		
+		path = {
+			leads_to_tech = permafrost_excavation_2 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=3 y=5}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			excavation_tech
+		}
+	}
+	
+	permafrost_excavation_2 = {
+	
+	    local_resources_factor = 0.05
+		
+		path = {
+			leads_to_tech = permafrost_excavation_3 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=3 y=7}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			excavation_tech
+		}
+	}
+	
+	permafrost_excavation_3 = {
+	
+	    local_resources_factor = 0.05
+		
+		path = {
+			leads_to_tech = metal_foundry_1 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=3 y=9}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			excavation_tech
+		}
+	}
+	
+	metal_foundry_1 = {
+		
+		enable_building = {
+			building = steel_mill
+			level = 1
+		}
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=3 y=11}
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				steel > 10
+			}
+			modifier = {
+				factor = 0.5
+				steel > 20
+			}	
+			modifier = {
+				factor = 1
+				steel > 30
+			}			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	industry_permafrost_standartization_1 = {
+
+        line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.10
+
+        research_cost = 1
+        start_year = 4071
+        folder = {
+            name = permafrost_industry_folder
+            position = { x=7 y=5 }
+        }
+
+        path = {
+            leads_to_tech = industry_permafrost_standartization_2
+            research_cost_coeff = 1
+        }
+
+        ai_will_do = {
+            factor = 50
+        }
+
+        categories = {
+            industry
+        }
+    }
+	
+	industry_permafrost_standartization_2 = {
+
+        line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.10
+
+        research_cost = 1
+        start_year = 4071
+        folder = {
+            name = permafrost_industry_folder
+            position = { x=7 y=7 }
+        }
+
+        path = {
+            leads_to_tech = industry_permafrost_standartization_3
+            research_cost_coeff = 1
+        }
+
+        ai_will_do = {
+            factor = 50
+        }
+
+        categories = {
+            industry
+        }
+    }
+	
+	industry_permafrost_standartization_3 = {
+
+        line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.10
+
+        research_cost = 1
+        start_year = 4071
+        folder = {
+            name = permafrost_industry_folder
+            position = { x=7 y=9 }
+        }
+
+        ai_will_do = {
+            factor = 50
+        }
+
+        categories = {
+            industry
+        }
+    }
+	
+	industry_permafrost_tools_3 = {
+		
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=5 y=5 }
+		}
+		
+		path = {
+			leads_to_tech = industry_permafrost_tools_4
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	industry_permafrost_tools_4 = {
+		
+		production_factory_max_efficiency_factor = 0.10
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=5 y=7 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	industry_permafrost_generators_1 = {
+		
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.10
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=15 y=1 }
+		}
+	
+		path = {
+			leads_to_tech = industry_permafrost_generators_2
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	industry_permafrost_generators_2 = {
+		
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.10
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=15 y=3 }
+		}
+	
+		path = {
+			leads_to_tech = industry_permafrost_generators_3
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	industry_permafrost_generators_3 = {
+		
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.10
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=15 y=5 }
+		}
+	
+		path = {
+			leads_to_tech = construction_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = industry_permafrost_generators_4
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	industry_permafrost_generators_4 = {
+		
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.10
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=15 y=7 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	construction_1 = {
+	
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = construction_2 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=13 y=7}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			construction_tech
+		}
+	}
+	
+	construction_2 = {
+	
+		production_speed_buildings_factor = 0.05
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=13 y=9}
+		}
+		
+		path = {
+			leads_to_tech = construction_3 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			construction_tech
+		}
+	}
+	
+	construction_3 = {
+	
+		production_speed_buildings_factor = 0.05
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=13 y=11}
+		}
+		
+		path = {
+			leads_to_tech = components_workshops_1 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			construction_tech
+		}
+	}
+	
+	components_workshops_1 = {
+		
+		enable_building = {
+			building = components_industry
+			level = 1
+		}
+		
+		research_cost = 1
+		start_year = 4071
+		folder = {
+			name = permafrost_industry_folder
+			position = { x=13 y=13}
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				steel > 10
+			}
+			modifier = {
+				factor = 0.5
+				steel > 20
+			}	
+			modifier = {
+				factor = 1
+				steel > 30
+			}			
+		}
+		
+		categories = {
+			industry
+		}
+	}
 }

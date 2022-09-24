@@ -28,7 +28,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 	
-	chromium_industry = {
+	components_industry = {
 		show_on_map = 1
 		base_cost = 8750
 		icon_frame = 22
@@ -52,7 +52,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 	
-	aluminium_industry = {
+	scrap_industry = {
 		show_on_map = 1
 		base_cost = 7250
 		icon_frame = 20

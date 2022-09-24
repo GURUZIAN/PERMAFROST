@@ -161,8 +161,6 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_plain_bg2"
 		}
-		
-	#####hoi iv original crap#####
 
 		containerWindowType = {
 			name = "infantry_folder"
@@ -430,7 +428,7 @@ guiTypes = {
 			name = "permafrost_industry_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 26 right = 27}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
@@ -442,14 +440,22 @@ guiTypes = {
 			
 			iconType = {
 					name ="permafrost_industry_techtree_bg"
-					spriteType = "GFX_permafrost_civilization_techtree_bg"
+					spriteType = "GFX_permafrost_industry_techtree_bg"
 					position = { x=0 y=0 }
 					alwaystransparent = yes
 				}
 	
 			gridboxtype = {
-				name = "hydrogen_using_tech_tree"
-				position = { x = 1 y = 0 }
+				name = "industry_permafrost_tools_1_tree"
+				position = { x = 5 y = 0 }
+				size = { width = 520 height = 800 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "industry_permafrost_generators_1_tree"
+				position = { x = 15 y = 0 }
 				size = { width = 520 height = 800 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -457,9 +463,13 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "PERMAFROST_ind_CTT_year_right"
-				position = { x=100 y=40 }
-				size = { width = 130 height = 100% }
-				orientation = upper_left
+				position = { x = 0 y = 0 }
+				clipping = no
+				
+				size = {
+					width = 1400 height = 1800
+					min = { width = 3930 height = 100%% }
+				}
 
 				instantTextBoxType = {
 					name = "bpermp"
@@ -480,12 +490,36 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 32}
-					text = "Permafrost period"
+					text = "4071"
 					maxWidth = 200
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}					
+				}	
+				instantTextBoxType = {
+					name = "permper_2"
+					position = { x = 0 y = 1250 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 32}
+					text = "4072"
+					maxWidth = 200
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "permper_3"
+					position = { x = 0 y = 1500 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 32}
+					text = "4073"
+					maxWidth = 200
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}	
 			}					
 		}
 
@@ -952,7 +986,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "techtree_industry_folder_small_item"
+		name = "techtree_permafrost_industry_folder_small_item"
 		position = { x=0 y=0 }
 		size = { width = 204 height = 72 }
 		clipping = no
