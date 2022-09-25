@@ -40,7 +40,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 	
-	tungsten_industry = {
+	chemicals_industry = { #tungsten
 		show_on_map = 1
 		base_cost = 7250
 		icon_frame = 21
@@ -52,7 +52,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 	
-	scrap_industry = {
+	scrap_industry = { #aluminium
 		show_on_map = 1
 		base_cost = 7250
 		icon_frame = 20

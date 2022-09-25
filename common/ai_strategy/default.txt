@@ -133,6 +133,31 @@
 #	priority = 100 # ai will prefer state of the highest prio strategy
 # }
 
+###buildings
+
+default_wants_scrap = {
+	enable = {
+		has_resources_amount = {
+			resource = aluminium
+			amount < 0
+			delivered = no
+		}
+	}
+	abort = {
+        has_resources_amount = {
+			resource = aluminium
+			amount > 0
+			delivered = no
+		}
+    }
+	ai_strategy = {
+		type = building_target
+		id = scrap_industry
+		value = 70
+	}
+}
+
+###army
 
 default_unit_production = {
 	enable = {
