@@ -1,0 +1,13 @@
+
+objectTypes = {
+
+	pdxmesh = {
+		name = "geo_ak47s_mesh"
+		file = "gfx/models/units/geo_akms.mesh"
+	}
+
+	pdxmesh = {
+		name = "geo_rk95_mesh"
+		file = "gfx/models/units/geo_rk95.mesh"
+	}
+}
